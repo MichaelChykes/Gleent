@@ -1,0 +1,368 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+/* Navigation */
+nav {
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#flex {
+  display: flex;
+  align-items: center;
+}
+
+.G-IMG{
+  width: 20px;
+  margin-right: 5px;
+}
+
+#left-view a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f8b933;
+  font-weight: bold;
+}
+
+#right-view {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-right: 20px;
+}
+
+#cart-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+/* Buttons */
+#bnt-1 {
+  background-color: #007bff;
+  color: whitesmoke;
+  border: none;
+  border-radius: 7px;
+  height: 20px;
+}
+
+#menu-list a {
+  margin: 5px;
+  color: #f8b933;
+  text-decoration: none;
+  font-family: sans-serif;
+  flex-shrink: 0;
+}
+
+#menu-list a:hover {
+  background-color: whitesmoke;
+  color: #f8b933;
+  width: fit-content;
+  border-radius: 7px;
+}
+
+.btn-2 {
+  background-color: #f8b933;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  padding-top: 3px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart-items li {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#cart-items li span {
+  font-weight: bold;
+}
+
+#cart-items button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#cart-items button:nth-child(1) {
+  background-color: orange;
+}
+
+#cart-items button:nth-child(2) {
+  background-color: red;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+}
+
+button[onclick*="checkoutViaWhatsApp"] {
+  background-color: #25d366;
+  padding: 12px 20px;
+  font-size: 16px;
+  display: block;
+  margin: 30px auto 0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[onclick*="checkoutViaWhatsApp"]:hover {
+  background-color: #1ebe5c;
+}
+
+/* ----------------------
+Responsive Layouts
+----------------------- */
+
+/* Laptops & Large Screens (1000px+) */
+@media (min-width: 1000px) {
+#cart-items li {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+}
+
+/* Tablets (600px – 999px) */
+@media (min-width: 600px) and (max-width: 999px) {
+#cart-items li {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cart-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#menu-list {
+  gap: 15px;
+}
+}
+
+/* Small devices / mobile (less than 600px) */
+@media (max-width: 599px) {
+#flex {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+#menu-list {
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+#cart-items li {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+}
+
+.cart-item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+#cart-items li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+button[onclick="checkoutViaWhatsApp()"] {
+  width: 100%;
+  max-width: 300px;
+}
+}
+/* ----------------------------
+ SPECIAL STYLES FOR DARK SECTIONS
+ (like nav, header images, dark cards)
+-----------------------------*/
+nav h1, nav h2, nav h3,
+nav p, nav a,
+#store-head h3, #store-head p,
+.header-txts h3, .header-txts p {
+color: #fff !important; /* Bright white for contrast */
+text-shadow: 0 1px 3px rgba(0,0,0,0.4); /* smooth readability */
+}
+
+#menu-list a {
+color: #f8b933;
+font-weight: 600;
+}
+
+#menu-list a:hover {
+background-color: #f8b933;
+color: #fff;
+}
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  #flex {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  #middle-view {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #menu-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+}
+
+/* ✅ Large phones & portrait tablets (480px – 768px) */
+@media (max-width: 768px) {
+
+nav {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-p{
+  font-size: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.card p {
+  font-size: 40px;
+  font-family:sans-serif;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+
+}
+
+
+
+/* ✅ Small phones (≤480px) */
+@media (max-width: 480px) {
+
+nav {
+  padding: 8px;
+}
+
+#menu-list a {
+  font-size: 15px;
+}
+
+.service-p{
+  font-size: 20px;
+}
+
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111;
+}
+.card p {
+  font-size: 15px;
+  font-family:sans-serif;
+  color: #666;
+  line-height: 1.5;
+}
+
+}

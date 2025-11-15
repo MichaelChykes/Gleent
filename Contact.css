@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    padding: 0px;
+    margin: 0;
+  }
+  
+  nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  } 
+  #cart-link{
+    text-decoration: none;
+    margin-right: 5px;
+    margin: auto;
+  }
+  #flex{
+    display: flex;
+    align-items: center;
+  }
+  
+  .G-IMG{
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  #left-view a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f8b933;
+    font-family: sans-serif;
+    font-weight: bold;
+     
+  }
+  
+  #middle-view{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu-list a{
+    margin: 5px;
+    color:#f8b933;
+    text-decoration: none;
+    font-family: sans-serif;
+    flex-shrink: 0;
+  }
+  #menu-list a:hover{
+    background-color: whitesmoke;
+    color: #f8b933;
+    width: fit-content;
+    border-radius: 7px;
+  }
+  
+  
+  .btn-2 {
+    background-color: #f8b933;
+    color: white;
+    border: none;
+   padding: 5px 7px;
+    padding-top: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+ 
+  .contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+  }
+
+  .contact-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .contact-container p.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    outline: none;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+   
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    height: 120px;
+    resize: none;
+  }
+
+  .contact-form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #FFD43B;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #e1c034;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .contact-info p {
+    margin: 6px 0;
+    color: #444;
+  }
+
+  .whatsapp-link {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .whatsapp-link:hover {
+    background-color: #1ebe5b;
+  }
+
+/* ----------------------------
+   SPECIAL STYLES FOR DARK SECTIONS
+   (like nav, header images, dark cards)
+-----------------------------*/
+nav h1, nav h2, nav h3,
+nav p, nav a,
+#store-head h3, #store-head p,
+.header-txts h3, .header-txts p {
+  color: #fff !important; /* Bright white for contrast */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4); /* smooth readability */
+}
+
+#menu-list a {
+  color: #fff;
+  font-weight: 600;
+}
+
+#menu-list a:hover {
+  background-color: #f8b933;
+  color: #fff;
+  
+}
+  /* Responsive (Mobile) */
+  @media (max-width: 768px) {
+    #flex {
+      flex-direction: column;
+      padding: 16px;
+    }
+  
+    #middle-view {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    #menu-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+   /* ✅ Large phones & portrait tablets (480px – 768px) */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-p{
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111;
+  }
+
+  .card p {
+    font-size: 40px;
+    font-family:sans-serif;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+
+ 
+
+}
+
+
+
+/* ✅ Small phones (≤480px) */
+@media (max-width: 480px) {
+
+  nav {
+    padding: 8px;
+  }
+
+  #menu-list a {
+    font-size: 15px;
+  }
+
+  .service-p{
+    font-size: 20px;
+  }
+
+
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  .card p {
+    font-size: 15px;
+    font-family:sans-serif;
+    color: #666;
+    line-height: 1.5;
+  }
+
+}
+/* ===========================
+   LAPTOP (<=1024px)
+=========================== */
+@media (max-width: 1024px) {
+  #menu-list {
+    gap: 10px;
+  }
+
+  #menu-list a {
+    font-size: 14px;
+  }
+}
+
+
+/* ===========================
+   TABLET (<=768px)
+=========================== */
+@media (max-width: 768px) {
+  nav#flex {
+    padding: 8px 2%;
+  }
+
+  #menu-list {
+    gap: 8px;
+  }
+
+  #menu-list a {
+    font-size: 13px;
+    padding: 5px 7px;
+  }
+}
+
+
+/* ===========================
+   SMALL PHONES (<=480px)
+=========================== */
+@media (max-width: 480px) {
+  nav#flex {
+    padding: 6px 1%;
+  }
+
+  #menu-list {
+    gap: 6px;
+  }
+
+  #menu-list a {
+    font-size: 11.5px;
+    padding: 4px 5px;
+  }
+
+  .G-IMG {
+    width: 18px;
+  }
+}
+
+
+/* ========= Large Screens (1200px+) ========= */
+@media (min-width: 1200px) {
+  #heading {
+    flex-wrap: nowrap;
+  }
+}
+
+/* ========= Laptop & Tablets (768px - 1199px) ========= */
+@media (max-width: 1199px) and (min-width: 768px) {
+  #heading {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* ========= Small Tablets & Mobile (max 767px) ========= */
+@media (max-width: 767px) {
+  #heading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #right-heading,
+  #middle-heading {
+    width: 100%;
+  }
+}
+
+
+

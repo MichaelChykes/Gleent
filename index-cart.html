@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - Jos Buy and Sell</title>
+  <link rel="stylesheet" href="index-cart.css" type="text/css">
+</head>
+
+<body>
+  <nav id="flex">
+    <div id="left-view">
+      <a href="#"><img class="G-IMG" src="images/menu.png" >Gleent</a>
+    </div>
+    <div id="middle-view">
+      <div id="menu-list">
+        <a href="index.html">Home</a>
+        <a href="category.html">category</a>
+        <a href="Services.html">Services</a>
+        <a href="About us.html">About us</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div id="right-view">
+      <a href="#"><button class="btn-2">Sign up</button></a>
+      <a href="#"><button class="btn-2">Log in</button></a>
+      <a href="index-cart.html" id="cart-link">🛒<span id="cart-count">0</span></a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Cart Items</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₦<span id="cart-total">0</span></p>
+    <button onclick="checkoutViaWhatsApp()" 
+  style="margin-top: 20px; background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;;">
+  Checkout via WhatsApp
+</button>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
