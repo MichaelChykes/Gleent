@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Gleent</title>
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+  <!-- nav bar -->
+  <nav id="flex">
+    <div id="left-view">
+      <a href="#"><img class="G-IMG" src="images/menu.png" >Gleent</a>
+    </div>
+    <div id="middle-view">
+      <div id="menu-list">
+        <a href="index.html">Home</a>
+        <a href="Category.html">Category</a>
+        <a href="Services.html">Services</a>
+        <a href="Aboutus.html">About us</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+    <div id="right-view">
+      <a href="index-cart.html" id="cart-link">🛒<span id="cart-count">0</span></a>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <div id="container-main">
+    <div id="heading">
+      <div id="right-heading">
+        <h1 id="heading1">Welcome to Gleent – Shop Smarter. Live Better.</h1>
+        <p id="heading-p">Products & Services Delivered to Your Doorstep</p>
+        <button id="shop-now">Shop Now</button>
+      </div>
+      <div id="middle-heading"> <img id="Banner" src="images/banner new.png"></div>
+
+     
+    </div>
+  </div>
+
+  <section id="featured-carousel">
+    <h3>Trending Picks</h3>
+    <div class="carousel-container">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track">
+        <div class="carousel-card">
+          <img src="images/khamrah by lattary.jpg" alt="Khamrah by Lattafy">
+          <h3>Khamrah by Lattafy</h3>
+          <p>Aromatic, spicy vanilla woods.</p>
+          <p class="price">₦7,000</p>
+        </div>
+        <div class="carousel-card">
+          <img src="images/Zara Half cover.JPG" alt="Zara Half Cover">
+          <h3>Zara Half Cover</h3>
+          <p>Stylish half-cover designer shoe.</p>
+          <p class="price">₦35,000</p>
+        </div>
+        <div class="carousel-card">
+          <img src="images/Fast charger 7.JPG" alt="Fast Charger">
+          <h3>35W iPhone Charger</h3>
+          <p>Type-C lightning fast charging adapter.</p>
+          <p class="price">₦7,000</p>
+        </div>
+        <div class="carousel-card">
+          <img src="images/earbud 10.JPG" alt="D68 Earbud">
+          <h3>D68 Wireless Earbud</h3>
+          <p>High-quality sound with noise cancellation.</p>
+          <p class="price">₦17,000</p>
+        </div>
+        <div class="carousel-card">
+          <img src="images/Loius V black.JPG" alt="Louis V Black Palms">
+          <h3>Louis V Black Palms</h3>
+          <p>Chic floral design for everyday wear.</p>
+          <p class="price">₦28,000</p>
+        </div>
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+  
+
+  <!-- Main Layout -->
+  <h1 id="layout-text">Featured Items</h1>
+  <div class="shop-layout">
+    <section class="product-grid">
+      <div class="product-card">
+        <img src="images/khamrah by lattary.jpg" alt="Product 1">
+        <h3>khamrah by lattafy</h3>
+        <p class="description">Aromatic, spicy vanilla woods.</p>
+        <p class="price">₦7,000</p>
+        <button id="addtocart" onclick="addToCart('khamrah by lattafy',70000, 'images/khamrah by lattary.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Loius V black.JPG" alt="Product 2">
+        <h3>Louis V Black Palms</h3>
+        <p class="description">Chic floral dress for everyday wear.</p>
+        <p class="price">₦28,000</p>
+        <button id="addtocart"  onclick="addToCart('Louis V Black Palms',28000, 'images/Loius V black.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Fast charger 7.JPG" alt="Product 3">
+        <h3>35w Iphone Charger</h3>
+        <p class="description">Type-C Lightning Fast Charger.</p>
+        <p class="price">₦7,000</p>
+        <button id="addtocart" onclick="addToCart('35w Iphone Charger',7000, 'images/Fast charger 7.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Power Bank 2.JPG" alt="Product 4">
+        <h3>50000mAh Power Bank</h3>
+        <p class="description">Super Fast with LED Light.</p>
+        <p class="price">₦27,000</p>
+        <button id="addtocart" onclick="addToCart('50000mAh Power Bank',27000, 'images/Power Bank 2.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Hug 3.JPG" alt="Product 5">
+        <h3>Hug</h3>
+        <p class="description">Soft,cozy, warm and sweet.</p>
+        <p class="price">₦5,000</p>
+        <button id="addtocart" onclick="addToCart('Hug',5000, 'images/Hug 3.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/earbud 10.JPG" alt="Product 6">
+        <h3>D68 Wireless Earbud</h3>
+        <p class="description">Airbud. IOS and Andriod.</p>
+        <p class="price">₦6,000</p>
+        <button id="addtocart" onclick="addToCart('D68 Wireless Earbud',6000, 'images/earbud 10.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Zara Half cover.JPG" alt="Product 7">
+        <h3>Zara Half cover</h3>
+        <p class="description">Easy slip-on, effortless class.</p>
+        <p class="price">₦35,000</p>
+        <button id="addtocart" onclick="addToCart('Zara Half cover',35000, 'images/Zara Half cover.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Wireless Bluetooth 30.JPG" alt="Product 8">
+        <h3>Bluetooth Speaker</h3>
+        <p class="description">Phone Charging, Lamp Speaker.</p>
+        <p class="price">₦12,000</p>
+        <button id="addtocart" onclick="addToCart('Bluetooth Speaker',12000, 'images/Wireless Bluetooth 30.JPG')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/I am white used.JPG" alt="Product 9">
+        <h3>I am white</h3>
+        <p class="description">Elegant rose-gold wristwatch.</p>
+        <p class="price">₦3,500</p>
+        <button id="addtocart" onclick="addToCart('I am white',3500, 'images/I am white used.JPG')">Add to Cart</button>
+      </div>
+
+    
+      <div class="product-card">
+        <img src="images/UGG brown.JPG" alt="Product 10">
+        <h3>UGG Brown Palms</h3>
+        <p class="description">Pure Comfort, Rich Culture</p>
+        <p class="price">₦27,000</p>
+        <button id="addtocart" onclick="addToCart('UGG Brown Palms',27000, 'images/UGG brown.JPG')">Add to Cart</button>
+      </div>
+    
+  </div>
+</section>
+<!-- footer -->
+ <!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>Gleent</h2>
+      <p class="action">Your one-stop shop for quality products and trusted services.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html">Category</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3 class="sub">Subscribe</h3>
+      <p class="action">Get updates on new offers and services</p>
+
+      <!-- ✅ Functional newsletter form -->
+      <form id="newsletter-form" action="https://formspree.io/f/mzzybawr" method="POST">
+        <!-- Email input -->
+        <input type="email" name="email" placeholder="Your email address" required>
+      
+        <!-- Hidden field to set the reply-to address to the subscriber -->
+        <input type="hidden" name="_replyto" value="">
+      
+        <!-- Optional: Customize the notification email subject -->
+        <input type="hidden" name="_subject" value="New newsletter subscription">
+      
+        <!-- Optional: Redirect user to a Thank You page after submission -->
+        <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+      
+        <!-- Submit button -->
+        <button type="submit">Subscribe</button>
+      </form>
+      
+
+      <!-- ✅ On-page success/error message -->
+      <p id="newsletter-message" style="display:none; margin-top:10px;"></p>
+    </div>
+
+    <div class="footer-social">
+      <h3 class="sub">Connect with us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61579309082870"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>Phone</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="p">&copy; 2025 Gleent. All rights reserved.</p>
+  </div>
+</footer>
+
+  </footer>
+  <!-- script-->
+  <script src="index.js"></script>
+</body>
+</html>

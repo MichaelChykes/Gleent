@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services</title>
+    <link rel="stylesheet" href="Services.css" type="text/css">
+</head>
+<body>
+    <nav id="flex">
+        <div id="left-view">
+          <a href="#"><img class="G-IMG" src="images/menu.png">Gleent</a>
+        </div>
+        <div id="middle-view">
+          <div id="menu-list">
+            <a href="index.html">Home</a>
+            <a href="Category.html">category</a>
+            <a href="Services.html">Services</a>
+            <a href="Aboutus.html">About us</a>
+            <a href="Contact.html">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+    <section class="solutions">
+        <h2>Our Services</h2>
+        <p class="service-p">We Simplify the complex, so you can focus on what matters most</p>
+        <div class="solutions-grid">
+
+            <div class="card">
+                <img src="images/pick up.png" alt="Pick up">
+                <h3>Pick-up & Drop-off</h3>
+                <p>Convenient and reliable logistics for your everyday needs. Whether it's a package, a document, or personal item, we'll get it where it needs to go-safeely and on time.</p>
+                <button class="request-btn" onclick="openForm('pickup')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/enquiry-1.png" alt="Enquiry">
+                <h3>Product Enquiry</h3>
+                <p>Got questions about our products? Our product enquiry service provides quick, accurate information to help you make the right purchase every time, to ensure your maximium satisfaction.</p>
+                <button class="request-btn" onclick="openForm('enquiry')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/Responsive-Web-design.png" alt="webdesign">
+                <h3>Web Design for Local Business</h3>
+                <p>Bring your brand to life online with our tailored web design services. We craft responsivel user friendly website that enhance your digital presence and drive result.</p>
+                <button class="request-btn" onclick="openForm('webdesign')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/customer S.jpeg" alt="customerservice">
+                <h3>Customer Service</h3>
+                <p>Need help with your order or have questions? Our friendly customer service team is here to assit you promptly and proffesionally, ensuring a smooth shopping experience.</p>
+                <button class="request-btn" onclick="openForm('customerservice')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/gift basket.png" alt="gift">
+                <h3>Gift Basket</h3>
+                <p>Send love, appreciate, or celebrate with our custom gifts basket. Curated with our care and tailored to your needs, they're perfect for any occasion, putting smile on your face.</p>
+                <button class="request-btn" onclick="openForm('gift')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/baking service.jpg" alt="Baking">
+                <h3>Baking Service</h3>
+                <p>Delight in freshly baked goods made to order. From cakes and pastries and custom treats, we deliver delicious creations perfect for any occasion, our taste is exceptional.</p>
+                <button class="request-btn" onclick="openForm('baking')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/beauty and make up S.png" alt="make up">
+                <h3>Make-up & Beauty Service</h3>
+                <p>Look and feel your best with our professional beauty srvices. We offer makeup application, hairstyling, and more-perfect for events, photoshoots, or everyday glam.</p>
+                <button class="request-btn" onclick="openForm('beauty')">Request Service</button>
+            </div>
+
+            <div class="card">
+                <img src="images/home and repair S.png" alt="Home">
+                <h3>Home Repairs & Maintenance</h3>
+                <p>Keep your home in top shape with our reliable repair services. We handle plumbing, electrical work, painting, and more-efficiently and affordably.</p>
+                <button class="request-btn" onclick="openForm('repairs')">Request Service</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closeForm()">✖</button>
+            <h3 id="form-title">Service Request</h3>
+
+            <!-- UPDATED FORM -->
+            <form id="service-form" enctype="multipart/form-data">
+                <div id="form-fields"></div> <!-- Dynamic fields load here -->
+                <button type="submit">Submit via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Services.js"></script>
+
+</body>
+</html>

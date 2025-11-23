@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gleent Perfumes</title>
+    <link rel="stylesheet" href="category.css" type="text/css">
+</head>
+<body>
+    <!-- nav bar -->
+  <nav id="flex">
+    <div id="left-view">
+      <a href="#"><img class="G-IMG" src="images/menu.png" >Gleent</a>
+    </div>
+    <div id="middle-view">
+      <div id="menu-list">
+        <a href="index.html">Home</a>
+        <a href="Category.html">Category</a>
+        <a href="Services.html">Services</a>
+        <a href="Aboutus.html">About us</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+    <div id="right-view">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Show All</button>
+        <a href="category-cart.html" id="cart-link">🛒<span id="cart-count">0</span></a>
+      </div>
+      
+    </div>
+  </nav>
+  <div id="store-layout">
+    <div id="left-layout">
+        <section id="left-store">
+          <h3 id="left-store-h">STORE</h3>
+              <ul id="store-menu-list"> 
+                <a href="#"><li>
+                  <button id="store1">Gleent Aura</button> 
+              </li> </a> 
+            
+                <a href="Accessories.html"><li>
+                    <button id="store1">Gleent SmartGear</button>  
+                </li></a> 
+                <a href="footware.html"><li>
+                    <button id="store1">Gleent StepUp</button>
+                </li></a> 
+            </ul>
+        </section>
+
+        <div id="link">
+          <div id="Quick-link">
+            <div id="Quick-link">
+              <h3 id="quick-head">Gleent Essence</h3>
+              <p id="quick-text">
+                A luxury-inspired perfume store offering long-lasting, premium-quality fragrances for both men and women.
+                 We curate the finest scents — bold, soft, exotic, 
+                 and elegant — all crafted to elevate your presence and leave a lasting impression.
+              </p>
+          </div>
+             </div>
+        </div>
+      </div>
+       
+      <div id="middle-layout">
+        <div id="store-heads">
+            <div id="store">
+              <section id="featured-carousel">
+                <h3>Trending Picks</h3>
+                <div class="carousel-container">
+                  <button class="carousel-btn prev">&#10094;</button>
+                  <div class="carousel-track">
+                    <div class="carousel-card">
+                      <img src="images/combo 1.JPG" alt="My sent Combo">
+                      <h3>My sent Combo</h3>
+                      <p>Aromatic, spicy vanilla woods.</p>
+                      <p class="price">₦9,000</p>
+                    </div>
+                    <div class="carousel-card">
+                      <img src="images/combo 2.JPG" alt="Ace Combo">
+                      <h3>Ace Combo</h3>
+                      <p>Fun,fruity floral burst.</p>
+                      <p class="price">₦9,000</p>
+                    </div>
+                    <div class="carousel-card">
+                      <img src="images/combo 3.JPG" alt="Astral Collection Combo<">
+                      <h3>Astral Collection Combo</h3>
+                      <p>Fresh subtly sweet.</p>
+                      <p class="price">₦9,000</p>
+                    </div>
+                    <div class="carousel-card">
+                      <img src="images/Veyes.JPG" alt="Veyes">
+                      <h3>Veyes</h3>
+                      <p>Fresh subtly sweet.</p>
+                      <p class="price">₦4,000</p>
+                    </div>
+                    <div class="carousel-card">
+                      <img src="images/khamrah by lattary.jpg" alt="Khamrah by Lattafy">
+                      <h3>Khamrah by Lattafy</h3>
+                      <p>Aromatic, spicy vanilla woods.</p>
+                      <p class="price">₦7,000</p>
+                    </div>
+                  </div>
+                  <button class="carousel-btn next">&#10095;</button>
+                </div>
+                <div class="carousel-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </section>
+               
+            </div> 
+                
+        </div>
+    
+       
+
+        <h1 id="layout-text">Featured Items</h1>
+        <div class="shop-layout">
+          <section class="product-grid">
+
+
+            <div class="product-card">
+              <img src="images/Ramz.jpg" alt="Product 1">
+              <h3>Ramz</h3>
+              <p class="description">Deep musky and mysterious.</p>
+              <p class="price">₦7,500</p>
+              <button id="addtocart" onclick="addToCart('Ramz',7500,'images/Ramz.jpg')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Party time.JPG" alt="Product 2">
+              <h3>Party Time</h3>
+              <p class="description">Fun,fruity floral burst.</p>
+              <p class="price">₦6,500</p>
+              <button id="addtocart" onclick="addToCart('Patyr Time',6500,'images/Party time.JPG' )">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Avanti.JPG" alt="Product 3">
+              <h3>Avanti</h3>
+              <p class="description">Citrus, clean and energetic.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Avanti',4500,'images/Avanti.JPG' )">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Barakat.jpg" alt="Product 4">
+              <h3>Barakat</h3>
+              <p class="description">Luxurious, bold, amber.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Barakat (25ml)',3500, 'images/Barakat.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Sweet Kiss.JPG" alt="Product 5">
+              <h3>Sweet Kiss</h3>
+              <p class="description">Fruity playful-soft, romantic.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Sweet Kiss',3500, 'images/Sweet Kiss.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/choco musk.JPG" alt="Product 6">
+              <h3>Choco Musk</h3>
+              <p class="description">Chocolate, vailla creamy musk.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Choco Musk-',6000, 'images/choco musk.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/hayaati.jpg" alt="Product 7">
+              <h3>Hayaati</h3>
+              <p class="description">Warm spicy oriental.</p>
+              <p class="price">₦6,500</p>
+              <button id="addtocart" onclick="addToCart('Hyaati',6500, 'images/hayaati.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Veyes.JPG" alt="Product 8">
+              <h3>Veyes</h3>
+              <p class="description">Fresh subtly sweet.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Veyes',4000, 'images/Veyes.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Nova sugar.JPG" alt="Product 9">
+              <h3>Nova sugar<h3>
+              <p class="description">Sweet warm allure.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Nova sugar',6000, 'images/Nova sugar.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Just black 2.JPG" alt="Product 10">
+              <h3>Just Black</h3>
+              <p class="description">Citrus, florals, amber.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Just black',5000, 'images/Just black 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Creed adventure.jpg" alt="Product 11">
+              <h3>Creed Adventure</h3>
+              <p class="description">Bold fruity smoky elegance.</p>
+              <p class="price">₦6,500</p>
+              <button id="addtocart" onclick="addToCart('Creed adventure',6500, 'images/Creed adventure.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/hummer code.JPG" alt="Product 12">
+              <h3>Hummer Code</h3>
+              <p class="description">Bold spicy woddy allure.</p>
+              <p class="price">₦6,500</p>
+              <button id="addtocart" onclick="addToCart('Hummer code',6500, 'images/hummer code.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Surrender.JPG" alt="Product 13">
+              <h3>Surrender</h3>
+              <p class="description">Elegant musky floral warmth.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Surrender',3500, 'images/Surrender.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/9pm 2.JPG" alt="Product 14">
+              <h3>9PM</h3>
+              <p class="description">Sweet spicy bold allure.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('9PM',7000, 'images/9pm 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Big boos 2.JPG" alt="Product 15">
+              <h3>Big Boss</h3>
+              <p class="description">Bold, spicy woody elegance.</p>
+              <p class="price">₦5000</p>
+              <button id="addtocart" onclick="addToCart('Big boss',5000, 'images/Big boos 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ashantee zandaz.JPG" alt="Product 16">
+              <h3>Ashantee Zandaz</h3>
+              <p class="description">Floral, woody sensual elegance.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Ashantee zandaz',4500, 'images/Ashantee zandaz.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Escape 2.JPG" alt="Product 17">
+              <h3>Escape</h3>
+              <p class="description">Fresh, floral fruity elegance.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Escape',4500, 'images/Escape 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/I am white used.JPG" alt="Product 18">
+              <h3>I am White</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('I am white',3500, 'images/I am white used.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Far away used.JPG" alt="Product 19">
+              <h3>Far Away</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Far away',6000, 'images/Far away used.JPG')">Add to Cart</button>
+            </div>      
+
+
+            <div class="product-card">
+              <img src="images/Vannila sky.PNG" alt="Product 20">
+              <h3>Vanilla sky</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Vanilla sky',5000, 'images/Vannila sky.PNG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Myth scent.JPG" alt="Product 21">
+              <h3>Myth Scent</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Myth scent',7000, 'images/Myth scent.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Wave collection.JPG" alt="Product 22">
+              <h3>Wave collection</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Wave collection',4000, 'images/Wave collection.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/My her.JPG" alt="Product 23">
+              <h3>My Her</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('My her',5000, 'images/My her.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/khamrah by lattary.jpg" alt="Product 24">
+              <h3>khamrah</h3>
+              <p class="description"> Velvety, sweet hermony (50ml).</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('khamrah by lattafa (50ml) ',7000, 'images/khamrah by lattary.jpg')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Hanna secret.JPG" alt="Product 25">
+              <h3>Hannas Secret</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Hannas secret',4000, 'images/Hanna secret.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/UHF.JPG" alt="Product 26">
+              <h3>Uhf</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('UHF',5000, 'images/UHF.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Brosia body spray.JPG" alt="Product 27">
+              <h3>Brosia Body Spray</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Brosia body spray',3500, 'images/Brosia body spray.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Florie.JPG" alt="Product 28">
+              <h3>Florie</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Florie',5000, 'images/Florie.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/24k 30ml.JPG" alt="Product 29">
+              <h3>24k </h3>
+              <p class="description"> Velvety, woody hermony (30ml).</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('24k',3500, 'images/24k 30ml.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Gk men.JPG" alt="Product 30">
+              <h3>Gk men</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('GK men',3500, 'images/Gk men.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Deep blue.JPG" alt="Product 31">
+              <h3>Deep Blue</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Deep blue',4000, 'images/Deep blue.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Brosia 2.jpg" alt="Product 32">
+              <h3>Brosia Designer perfume</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦10,500</p>
+              <button id="addtocart" onclick="addToCart('Brosia Designer perfume',10500, 'images/Brosia 2.jpg')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/Interesting she use.JPG" alt="Product 33">
+              <h3>Interesting She</h3>
+              <p class="description"> Velvety, sweet woody hermony.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Interesting she',4500, 'images/Interesting she use.JPG')">Add to Cart</button>
+            </div>   
+
+            <div class="product-card">
+              <img src="images/use.jpg" alt="Product 34">
+              <h3>Deal</h3>
+              <p class="description"> Velvety, sweet hermony (100ml).</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Deal',7000, 'images/use.jpg')">Add to Cart</button>
+            </div>   
+
+
+            <div class="product-card">
+              <img src="images/RIGG 1.jpeg" alt="Product 35">
+              <h3>Riggs London Rustic</h3>
+              <p class="description">Bold, Rich, Lasting Confidence.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Rigss London Rustic',4000, 'images/RIGG 1.jpeg')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/riggs night.png" alt="Product 36">
+              <h3>Riggs London Night</h3>
+              <p class="description">Strong, Deep Masculine Energy.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart"  onclick="addToCart('Rigss London Night',4000, 'images/riggs night.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Lattafa Yara EDP.png" alt="Product 37">
+              <h3>Lattafa Yara </h3>
+              <p class="description">Floral with vanilla (50ml)  .</p>
+              <p class="price">₦6,500</p>
+              <button id="addtocart"  onclick="addToCart('Lattafa Yara EDP (50ml) ',6500, 'images/Lattafa Yara EDP.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ophylia EDP (50 ml).png" alt="Product 38">
+              <h3>Ophylia </h3>
+              <p class="description">Elegant, warm florals, (50ml) .</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart"  onclick="addToCart('Ophylia EDP (50ml)',10000, 'images/Ophylia EDP (50 ml).png')">Add to Cart</button>
+            </div>
+      
+
+            <div class="product-card">
+              <img src="images/Perfume 8.JPG" alt="Product 39">
+              <h3>World Matelot </h3>
+              <p class="description">Spicy, amber, incense, (50ml)  .</p>
+              <p class="price">₦18,000</p>
+              <button id="addtocart"  onclick="addToCart('World Matelot ',18000, 'images/Perfume 8.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ard Al Zaafaran Heibah EDP (Unisex, 50 ml).png" alt="Product 40">
+              <h3>Ard Al Zaafaran  </h3>
+              <p class="description">Fresh, warm florals, (50ml)   .</p>
+              <p class="price">₦21,000</p>
+              <button id="addtocart"  onclick="addToCart('Ard al zaafaran (50ml)',21000, 'images/Ard Al Zaafaran Heibah EDP (Unisex, 50 ml).png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/RIGG 3.jpeg" alt="Product 41">
+              <h3>Riggs London ACE</h3>
+              <p class="description">Rich Lasting Confidence.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Rigss London ACE',4000, 'images/RIGG 3.jpeg')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/riggs london bg.JPG" alt="Product 42">
+              <h3>Riggs London Power</h3>
+              <p class="description">Deep, Masculine Energy.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Rigss London Power',4000, 'images/riggs london bg.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/riggs voyage.png" alt="Product 43">
+              <h3>Riggs Voyage</h3>
+              <p class="description">Strong Deep Masculine Energy.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Rigss Voyage',4000, 'images/riggs voyage.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ard Al Zaafaran Mousuf Wardi EDP (50 ml).png" alt="Product 44">
+              <h3>Ard Al Mousuf </h3>
+              <p class="description"> Lychee, white musk, (50ml)   .</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart"  onclick="addToCart('Ard al mousuf (50ml)',8000, 'images/Ard Al Zaafaran Mousuf Wardi EDP (50 ml).png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/riggs rider.png" alt="Product 45">
+              <h3>Riggs Body Spray</h3>
+              <p class="description">Bold Rich Lasting Confidence.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Riggs body spray',4000, 'images/riggs rider.png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/riggs white bg.JPG" alt="Product 46">
+              <h3>Rigss London ICON</h3>
+              <p class="description">Fresh Irresistibly Charming.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Rigss London ICON',4000, 'images/riggs white bg.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/AlRehab French Coffee EDP (50 ml).png" alt="Product 47">
+              <h3>AlRehab French Coffee</h3>
+              <p class="description"> Vanilla, caramelised sugar, (50ml)</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart"  onclick="addToCart('Alrehab french coffe (50ml)',10000, 'images/AlRehab French Coffee EDP (50 ml).png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fragrance Avenue “My Her” (25 ml).png" alt="Product 48">
+              <h3>Fragrance Avenue   </h3>
+              <p class="description">“My Her” rose blend, (25ml).</p>
+              <p class="price">₦8,500</p>
+              <button id="addtocart"  onclick="addToCart('Fragrance avenue my her (25ml)',85000, 'images/Fragrance Avenue “My Her” (25 ml).png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/riggs bottle 1.png" alt="Product 49">
+              <h3>Riggs Perfume</h3>
+              <p class="description">Long-lasting fragrance, freshness.</p>
+              <p class="price">#5,500</p>
+              <button id="addtocart" onclick="addToCart('Riggs perfume',5500, 'images/riggs bottle 1.png')">Add to Cart</button>
+            </div>
+
+      
+            <div class="product-card">
+              <img src="images/imperio wy (1).JPG" alt="Product 50">
+              <h3>Imperio way</h3>
+              <p class="description"> Fruity-floral-musk fusion,(100ml)</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart"  onclick="addToCart('Imperio way (125ml)',8000, 'images/imperio wy (1).JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/challenge.JPG" alt="Product 51">
+              <h3>Challeneg EAU DE Parfume</h3>
+              <p class="description">Long-lasting fragrance, freshness (100ml).</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('halleneg EAU DE Parfume',10000, 'images/challenge.JPG')">Add to Cart</button id="addtocart">
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Perfume 6.JPG" alt="Product 52">
+              <h3>Temptation Parfume</h3>
+              <p class="description"> Dupes of luxury scents (25ml).</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart"  onclick="addToCart('Temptation Parfume)',7000, 'images/Perfume 6.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/confitti chocolate.png" alt="Product 53">
+              <h3>Confetti Chocolate</h3>
+              <p class="description">Soft Luxurious Everyday.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Confetti Chocolate',4000, 'images/confitti chocolate.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Brandy Designs “My Love” EDP.png" alt="Product 54">
+              <h3>Brandy “My Love” </h3>
+              <p class="description"> Bergamot, jasmine musk  (25ml).</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart"  onclick="addToCart('Brandy my love (25ml)',10000, 'images/Brandy Designs “My Love” EDP.png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/CONFETTI DEAR.jpeg" alt="Product 55">
+              <h3>Confetti Dear</h3>
+              <p class="description">Soft for Everyday Sophistication.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Confetti Dear',4000, 'images/CONFETTI DEAR.jpeg')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/CONFETTI DIVA.jpeg" alt="Product 56">
+              <h3>Confetti Diva</h3>
+              <p class="description">Elegant, Irresistibly Charming.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Confetti Diva',4000, 'images/CONFETTI DIVA.jpeg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Berries Weekend (Women).png" alt="Product 57">
+              <h3>	Berries Weekend (Women)  </h3>
+              <p class="description"> Fruity-floral with creamy vanilla .</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart"  onclick="addToCart('Berries weekend',10000, 'images/Berries Weekend (Women).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Dirham Wardi (100 ml).png" alt="Product 58">
+              <h3>Dirham Wardi </h3>
+              <p class="description">Rich aroma, enduring style.</p>
+              <p class="price">₦18,800</p>
+              <button id="addtocart" onclick="addToCart('Dirham wardi',18800, 'images/Dirham Wardi (100 ml).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/CONFETTI WISH.jpeg" alt="Product 59">
+              <h3>Confetti Wish</h3>
+              <p class="description">Classic perfume, modern appeal.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Confetti Wish',4000, 'images/CONFETTI WISH.jpeg')">Add to Cart</button>
+            </div>
+          
+
+            <div class="product-card">
+              <img src="images/Fragrance World Suave (100 ml).png" alt="Product 60">
+              <h3>	Fragrance World Suave </h3>
+              <p class="description"> Sauvage-inspired  (100ml).</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart"  onclick="addToCart('Fragrance word suave (100ml)',10000, 'images/Fragrance World Suave (100 ml).png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Caribbean Vanilla.png" alt="Product 61">
+              <h3>Carbbean Vanilla</h3>
+              <p class="description">Musk, caramel, watermelon.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Carbbean Vanilla',4000, 'images/Caribbean Vanilla.png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Matador (Men).png" alt="Product 62">
+              <h3>Matador (Men)</h3>
+              <p class="description">Peppery, spicy, woody.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Matador',45000, 'images/Matador (Men).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 7.JPG" alt="Product 63">
+              <h3>Lacoste Noir Perfume</h3>
+              <p class="description">Fruity-sweet with vanilla 100ml.</p>
+              <p class="price">₦14,500</p>
+              <button id="addtocart" onclick="addToCart('Lacoste Noir Perfume',145000, 'images/Perfume 7.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 1.JPG" alt="Product 64">
+              <h3>Blu Eau De Parfum</h3>
+              <p class="description">Classic floral-musk.</p>
+              <p class="price">₦5,500</p>
+              <button id="addtocart" onclick="addToCart('Blu Eau De Parfum',55000, 'images/Perfume 1.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 11.JPG" alt="Product 65">
+              <h3>Cybele Gold EAU DE Parfum</h3>
+              <p class="description">Vanilla, oud .</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Cybele Gold EAU DE Parfum<',6000, 'images/Raghba by Lattafa (100 ml).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 4.JPG" alt="Product 66">
+              <h3>Armani emporio you Perfume</h3>
+              <p class="description">Aquatic citrus, amber 100ml.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('Armani emporio you Perfume',10000, 'images/Perfume 4.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 2.JPG" alt="Product 67">
+              <h3>Valentino Uomo</h3>
+              <p class="description">Fresh spicy-citrus 100ml.</p>
+              <p class="price">₦13,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino Uomo)',13000, 'images/Perfume 2.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 3.JPG" alt="Product 68">
+              <h3>Versace Eros</h3>
+              <p class="description">Floral gourmand 100ml.</p>
+              <p class="price">₦24,000</p>
+              <button id="addtocart" onclick="addToCart('Versace Eros',24000, 'images/Perfume 3.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 10.JPG" alt="Product 69">
+              <h3>Black Opum</h3>
+              <p class="description">Citrus, woods, musk 90ml.</p>
+              <p class="price">15,000</p>
+              <button id="addtocart" onclick="addToCart('Black Opum',15000, 'images/Perfume 10.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Rasasi Blue Lady (40 ml).png" alt="Product 70">
+              <h3>Rasasi Blue Lady</h3>
+              <p class="description">Classic floral-musk 40 ml.</p>
+              <p class="price">₦19,000</p>
+              <button id="addtocart" onclick="addToCart('Rasasi blue lady (40ml)' ,19000, 'images/Rasasi Blue Lady (40 ml).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Oud Touch (25 ml).png" alt="Product 71">
+              <h3>Oud Touch </h3>
+              <p class="description">Fruity oud, patchouli, rose 00ml.</p>
+              <p class="price">₦15,000</p>
+              <button id="addtocart" onclick="addToCart(' Oud touch (100ml)',15000, 'images/Oud Touch (25 ml).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Emir identity (100 ml).png" alt="Product 72">
+              <h3>Emir identity </h3>
+              <p class="description">Warm woody-oriental oud.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Emir identity (100ml)',35000, 'images/Emir identity (100 ml).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Perfume 5.JPG" alt="Product 73">
+              <h3>Givanas Unisex Spray</h3>
+              <p class="description">Fresh pineapple-bergamot oud.</p>
+              <p class="price">₦5,500</p>
+              <button id="addtocart" onclick="addToCart('Givanas Unisex Spray',5500, 'images/Perfume 5.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Explore EDP (100 ml).png" alt="Product 74">
+              <h3>Explore EDP </h3>
+              <p class="description">Fresh citrus & woody amber (100ml).</p>
+              <p class="price">₦20,000</p>
+              <button id="addtocart" onclick="addToCart('Explore EDP (100ml)',20000, 'images/Explore EDP (100 ml).png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Confitti EDP (100 ml).png" alt="Product 75">
+              <h3>Confitti EDP</h3>
+              <p class="description">Sweet-floral, long-lasting (100ml).</p>
+              <p class="price">₦20,000</p>
+              <button id="addtocart" onclick="addToCart('Confitti EDPA (100ml)',20000, 'images/Confitti EDP (100 ml).png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/karis amaze.PNG" alt="Product 76">
+              <h3>KARIS AMAZE</h3>
+              <p class="description">Rich aroma, enduring style.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('karis amaze',4000, 'images/karis amaze.PNG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Eskoda.JPG" alt="Product 77">
+              <h3>Eskoda</h3>
+              <p class="description">Crisp, elegant and morden.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Eskoda Pink',4000, 'images/Eskoda.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/karis splash.PNG" alt="Product 78">
+              <h3>KARIS SPLASH</h3>
+              <p class="description">Soft sweetness, premium quality.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Karis splash',4000, 'images/karis splash.PNG')">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+              <img src="images/karish breez bottle.png" alt="Product 79">
+              <h3>KARIS BREEZE</h3>
+              <p class="description">Classic perfume, modern appeal.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Karis breeze',4000, 'images/karish breez bottle.png')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img src="images/you are mine.JPG" alt="Product 80">
+              <h3>you Are mine</h3>
+              <p class="description"> Sweet, warm and romantic.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('You are mine',3500, 'images/you are mine.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/karis mystery.PNG" alt="Product 81">
+              <h3>KARIS MYSTERY</h3>
+              <p class="description">Exotic blend, refined allure.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Karis mystery',4000, 'images/karis mystery.PNG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/kariss enthics.png" alt="Product 82">
+              <h3>KARIS ETHINCS</h3>
+              <p class="description">Smooth notes, irresistible charm.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Karis ethnics',4000, 'images/kariss enthics.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Rave Now Intense Men (100ml).png" alt="Product 83">
+              <h3>Rave Now Intense Men </h3>
+              <p class="description">Citrus, spices, amber (100ml).</p>
+              <p class="price">₦19,000</p>
+              <button id="addtocart" onclick="addToCart('Rave now intense men (100ml)',19000, 'images/Rave Now Intense Men (100ml).png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Fakhar Men by Lattafa.png" alt="Product 84">
+              <h3>Fakhar Men by Lattafa</h3>
+              <p class="description">Aromatic, spicy vanilla woods.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('Fakhar men by lattafa',27000, 'images/Fakhar Men by Lattafa.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Perfume 12.JPG" alt="Product 85">
+              <h3>Cool Breeze Parfum</h3>
+              <p class="description">Fruity, woody, musky.</p>
+              <p class="price">₦5,500</p>
+              <button id="addtocart" onclick="addToCart('Cool Breeze Parfum',5500, 'images/Perfume 12.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Dirham by Ard Al Zaafaran (100ml).png" alt="Product 86">
+              <h3>Dirham by Ard Al Zaafaran </h3>
+              <p class="description">Fresh citrus, herbs (100ml).</p>
+              <p class="price">₦18,500</p>
+              <button id="addtocart" onclick="addToCart('Dirham by ard al zaafaran (100ml)',18500, 'images/Dirham by Ard Al Zaafaran (100ml).png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Al Haramain Belle Rouge (100 ml).png" alt="Product 87">
+              <h3>Al Haramain Belle Rouge </h3>
+              <p class="description">Floral vanilla blend (100 ml).</p>
+              <p class="price">₦32,500</p>
+              <button id="addtocart" onclick="addToCart('Al haramain belle rouge (100ml)',32500, 'images/Al Haramain Belle Rouge (100 ml).png')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Ajmal Sacrifice for Her (50 ml).png" alt="Product 88">
+              <h3>Ajmal Sacrifice for Her </h3>
+              <p class="description">Jasmine, vanilla, musk (50ml).</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Ajmal sacrifice for her (50ml)',3500, 'images/Ajmal Sacrifice for Her (50 ml).png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/24k white new.png" alt="Product 89">
+              <h3>24k White</h3>
+              <p class="description">Rich, amber and luxurious.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('24k White (100ml)',7000, 'images/24k white new.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/zara men.jpg" alt="Product 90">
+              <h3>Zara Men</h3>
+              <p class="description">Clean, for everyday, masculine.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Zara men',4500, 'images/zara men.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/24k general unisex.webp" alt="Product 91">
+              <h3>24k</h3>
+              <p class="description">Rich aroma, enduring style.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('24k general (100ml)',7000, 'images/24k general unisex.webp')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/hug bg.PNG" alt="Product 92">
+              <h3>Hug</h3>
+              <p class="description">Exotic blend, refined allure.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Hug',3500, 'images/hug bg.PNG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/storm bg.PNG" alt="Product 93">
+              <h3>Storm</h3>
+              <p class="description">Bold ozonic and powerful.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('store-menu-list',3500, 'images/storm bg.PNG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Emergency EDP.png" alt="Product 94">
+              <h3>Emergency</h3>
+              <p class="description">Intense, daring and energetic.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Emergency EDP',4000, 'images/Emergency EDP.png')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Air fag.JPG" alt="Product 95">
+              <h3>Air Fag</h3>
+              <p class="description">Cool, brerzy,misnt and sharp.</p>
+              <p class="price">₦9,000</p>
+              <button id="addtocart" onclick="addToCart('Air fag',9000, 'images/Air fag.JPG')">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+              <img src="images/karis black.jpeg" alt="Product 96">
+              <h3>KARIS BLACK</h3>
+              <p class="description">Smooth notes, irresistible charm.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Karis black',4000, 'images/karis black.jpeg')">Add to Cart</button>
+            </div>
+
+          
+            <div class="product-card">
+              <img src="images/Genei secret bombshel.JPG" alt="Product 97">
+              <h3>Genei Secret bombshel</h3>
+              <p class="description">Floral,sweet, vibrant and sexy.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Genei Secret Bomshel',4500, 'images/Genei secret bombshel.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Hug 3.JPG" alt="Product 98">
+              <h3>Hug</h3>
+              <p class="description">Soft,cozy, warm and sweet.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Hug Big',5000, 'images/Hug 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Onleeu 2.JPG" alt="Product 99">
+              <h3>Onleeu</h3>
+              <p class="description">Fresh, aquatic,clean and light.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Onleeu',5000, 'images/Onleeu 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Pure black.JPG" alt="Product 100">
+              <h3>Pure black</h3>
+              <p class="description">Deep,dark and sensual.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Pure Black',4000, 'images/Pure black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Smart black.jpg" alt="Product 101">
+              <h3>Smart black</h3>
+              <p class="description">Refined, woody masculine.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Smart Black',4000, 'images/Smart black.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/karis charge.PNG" alt="Product 102">
+              <h3>KARIS CHARGE</h3>
+              <p class="description">Captivating pure aroma.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Kasri charge',4000, 'images/karis charge.PNG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Fashionista.JPG" alt="Product 103">
+              <h3>Fashionista</h3>
+              <p class="description">Trending fruity, feminine.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Fashionista',6000, 'images/Fashionista.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Mousuf 50ml.JPG" alt="Product 104">
+              <h3>Mousuf</h3>
+              <p class="description">Citrus, florals, amber (50ml).</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Mousuf (50ml)',6000, 'images/Mousuf 50ml.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Dear body spary.JPG" alt="Product 105">
+              <h3>Dear Body Spray<h3>
+              <p class="description">Sweet,fresh and charming.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Dear Body Spray',4000, 'images/Dear body spary.JPG')">Add to Cart</button>
+            </div>
+           
+            <div class="product-card">
+              <img src="images/Eclaire.jpg" alt="Product 106">
+              <h3>Eclaire</h3>
+              <p class="description">Soft, sweet, vanilla dream.</p>
+              <p class="price">₦4,500</p>
+              <button id="addtocart" onclick="addToCart('Eclaire',4500, 'images/Eclaire.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/lunar.JPG" alt="Product 107">
+              <h3>Lunar</h3>
+              <p class="description">Cool airy and elegant.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Lunar',5000, 'images/lunar.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Mousuf 25ml.JPG" alt="Product 108">
+              <h3>Mousuf </h3>
+              <p class="description">Sweet smoky, resinuos (25ml).</p>
+              <p class="price">₦3,700</p>
+              <button id="addtocart" onclick="addToCart('Mousuf (30ml)',3700, 'images/Mousuf 25ml.JPG')">Add to Cart</button>
+            </div>
+
+         
+        </div>
+      </section>
+      <script src="category.js"></script>      
+</body>
+</html>

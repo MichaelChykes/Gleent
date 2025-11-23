@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gleent Footware</title>
+    <link rel="stylesheet" href="footware.css" type="text/css">
+</head>
+<body>
+    <!-- nav bar -->
+  <nav id="flex">
+    <div id="left-view">
+      <a href="#"><img class="G-IMG" src="images/menu.png" >Gleent</a>
+    </div>
+    <div id="middle-view">
+      <div id="menu-list">
+        <a href="index.html">Home</a>
+        <a href="Category.html">Category</a>
+        <a href="Services.html">Services</a>
+        <a href="Aboutus.html">About us</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+    <div id="right-view">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Show All</button>
+        <a href="footware-cart.html" id="cart-link">🛒<span id="cart-count">0</span></a>
+      </div>
+      
+    </div>
+  </nav>
+  <div id="store-layout">
+    <div id="left-layout">
+        <section id="left-store">
+          <h3 id="left-store-h">STORE</h3>
+              <ul id="store-menu-list"> 
+               <a href="category.html"><li>
+                    <button id="store1">Gleent Aura</button> 
+                </li> </a> 
+            
+                <a href="Accessories.html"><li>
+                    <button id="store1">Gleent SmartGear</button>  
+                </li></a> 
+                <a href="footware.html"><li>
+                    <button id="store1">Gleent StepUp</button>
+                </li></a> 
+            </ul>
+        </section>
+
+        
+        <div id="link">
+          <div id="Quick-link">
+            <div id="Quick-link">
+              <h3 id="quick-head">Gleent Footwear Hub</h3>
+              <p id="quick-text">
+                A stylish men’s footwear store offering designer shoes, corporate shoes, loafers, half-covers, sandals, and classic pams.
+                 Built for comfort, elegance, and confidence — 
+                 every step reflects quality craftsmanship and premium style.
+              </p>
+              
+          </div>
+             </div>  
+        </div>
+        
+      </div>
+       
+        <div id="middle-layout">
+          <div id="store-heads">
+              <div id="store">
+                <section id="featured-carousel">
+                  <h3>Trending Picks</h3>
+                  <div class="carousel-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="carousel-track">
+                      <div class="carousel-card">
+                        <img src="images/Fendi Blcak Shoe.JPG" alt="Fendi Blcak Shoe">
+                        <h3>Fendi Blcak Shoe</h3>
+                        <p>Crafted for comfort and authority.</p>
+                        <p class="price">₦48,000</p>
+                      </div>
+                      <div class="carousel-card">
+                        <img src="images/Zara Half cover.JPG" alt="Zara Half Cover">
+                        <h3>Zara Half Cover</h3>
+                        <p>Stylish half-cover designer shoe.</p>
+                        <p class="price">₦35,000</p>
+                      </div>
+                      <div class="carousel-card">
+                        <img src="images/black VL half cover shoe.JPG" alt="VL Half Cover Shoe">
+                        <h3>VL Half Cover Shoe</h3>
+                        <p>Trendy look, relaxed fit.</p>
+                        <p class="price">₦35,000</p>
+                      </div>
+                      <div class="carousel-card">
+                        <img src="images/shoe 1.JPG" alt="Product 71">
+                       <h3>Fendi Black Shoe</h3>
+                        <p class="description">Crafted for comfort and authority.</p>
+                       <p class="price">₦43,000</p>
+                      </div>
+                      <div class="carousel-card">
+                        <img src="images/Loius V black.JPG" alt="Louis V Black Palms">
+                        <h3>Louis V Black Palms</h3>
+                        <p>Chic floral design for everyday wear.</p>
+                        <p class="price">₦28,000</p>
+                      </div>
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                  </div>
+                  <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                </section>
+                 
+              </div> 
+                  
+          </div>
+    
+       
+
+        <h1 id="layout-text">Featured Items</h1>
+        <div class="shop-layout">
+          <section class="product-grid">
+            <div class="product-card">
+              <img src="images/Zara cross palm brown.JPG" alt="Product 1">
+              <h3>Zara Palms Brown</h3>
+              <p class="description">Luxury comfort for everyday wear.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Palms Brown',25000, 'images/Zara cross palm brown.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Pedro Designer Pams.JPG" alt="Product 2">
+              <h3>Pedro Designer Pams</h3>
+              <p class="description">Soft leather, rich tradition.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Pedro Designer Pams',25000, 'images/Pedro Designer Pams.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Zara Half cover.JPG" alt="Product 3">
+              <h3>Zara Half cover</h3>
+              <p class="description">Easy slip-on, effortless class.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Half cover',35000, 'images/Zara Half cover.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Versace stone hale shoe.JPG" alt="Product 4">
+              <h3>Versaci Stone Shoe</h3>
+              <p class="description">Casual luxury for stylish men.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Versaci Stone Shoe',3500, 'images/Versace stone hale shoe.JPG')">Add to Cart</button>
+            </div>
+   
+            <div class="product-card">
+              <img src="images/Zara palms black.JPG" alt="Product 5">
+              <h3>Zara Palms Black</h3>
+              <p class="description">Relaxed style with premium touch.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Palms Black',25000, 'images/Zara palms black.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Balmain Designer Shoe.JPG" alt="Product 6">
+              <h3>Balmain Designer Shoe</h3>
+              <p class="description">Effortless class in every step.</p>
+              <p class="price">₦47,000</p>
+              <button id="addtocart"  onclick="addToCart('Balmain Designer Shoe',10000, 'images/Balmain Designer Shoe.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Black Designer Pams.JPG" alt="Product 7">
+              <h3>Black Designer Pams</h3>
+              <p class="description">Effortless elegance for native looks.</p>
+              <p class="price">₦24,000</p>
+              <button id="addtocart" onclick="addToCart('Black Designer Pams',24000, 'Black Designer Pams.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Zara brown.JPG" alt="Product 8">
+              <h3>Zara Brown</h3>
+              <p class="description">Bold simplicity for cool comfort.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Brown',25000, 'images/Zara brown.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Versaci black.JPG" alt="Product 9">
+              <h3>Versaci Black</h3>
+              <p class="description">Casual luxury for leisure moments.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Versaci Black',25000, 'images/Versaci black.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Brown Desinger Pams.JPG" alt="Product 10">
+              <h3>Brown Desinger Pams</h3>
+              <p class="description">Handcrafted quality, timeless feel.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Brown Desinger Pams',25000, 'images/Brown Desinger Pams.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/black strap slide cover.JPG" alt="Product 11">
+              <h3>Black Strap slide </h3>
+              <p class="description">Formal cotton shirt for men, amazing fit .</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Black Strap slide ',8000, 'images/black strap slide cover.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Tom ford black.JPG" alt="Product 12">
+              <h3>Tom Ford Black</h3>
+              <p class="description">Soft sole, durable design.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('Tom Ford Black',27000, 'images/Tom ford black.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Gucci gold strap pams.JPG" alt="Product 13">
+              <h3>Gucci Designer Pams</h3>
+              <p class="description">Traditional style, modern finish.</p>
+              <p class="price">₦22,000</p>
+              <button id="addtocart" onclick="addToCart('Gucci Designer Pams',22000, 'images/Gucci gold strap pams.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Givenchy Designer Black Shoe.JPG" alt="Product 14">
+              <h3>Givenchy Designer Shoe</h3>
+              <p class="description">Premium polish for executive confidence.</p>
+              <p class="price">₦48,000</p>
+              <button id="addtocart" onclick="addToCart('Givenchy Designer Shoe',48000, 'images/Givenchy Designer Black Shoe.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/D&G.JPG" alt="Product 15">
+              <h3>D&G Palms</h3>
+              <p class="description">Pure comfort, rich culture.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('D&G Palms',25000, 'images/D&G.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Balanciaga Cross Sandals.JPG" alt="Product 16">
+              <h3>Balanciaga Cross Sandals</h3>
+              <p class="description">Stylish slide for all occasions.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('Balanciaga Cross Sandals',28000, 'images/Balanciaga Cross Sandals.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Tom ford white.JPG" alt="Product 17">
+              <h3>Tom Ford White</h3>
+              <p class="description">Sleek design, easy fit.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('Tom Ford White',27000, 'images/Tom ford white.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Prada green Pams.JPG" alt="Product 18">
+              <h3>Prada green Pams</h3>
+              <p class="description">Classy, comfy, and versatile.</p>
+              <p class="price">₦20,000</p>
+              <button id="addtocart" onclick="addToCart('Prada green Pams',20000, 'images/Prada green Pams.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Prada Cross Brown Pams.JPG" alt="Product 19">
+              <h3>Prada Cross Pams</h3>
+              <p class="description">Durable leather for daily ease.</p>
+              <p class="price">₦90,000</p>
+              <button id="addtocart" onclick="addToCart('Prada Cross Pams',90000, 'images/Prada Cross Brown Pams.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Prada Designer Cross Pams.JPG" alt="Product 20">
+              <h3>Prada Brown Cross Pam</h3>
+              <p class="description">Simple. Stylish. Strong.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('Prada Brown Cross Pam',3500, 'images/Prada Brown Cross Pams.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Toom ford blck.JPG" alt="Product 21">
+              <h3>Tom Ford Black</h3>
+              <p class="description">Stylish design for every occasion.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('Tom Ford Black',27000), 'images/Toom ford blck.JPG'">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Prada Black Simple Pams.JPG" alt="Product 22">
+              <h3>Prada Black Simple Pams</h3>
+              <p class="description">Minimal look, maximum comfort.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Prada Black Simple Pams',25000, 'images/Prada Black Simple Pams.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Versche half shoe.JPG" alt="Product 23">
+              <h3>Versace Half Shoe</h3>
+              <p class="description">Modern design, everyday comfort.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Versace Half Shoe',35000, 'images/Versche half shoe.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Tomford Classic.png" alt="Product 24">
+              <h3>Tomford Classic Shoe</h3>
+              <p class="description">Effortless class in every step.</p>
+              <p class="price">₦50,000</p>
+              <button id="addtocart" onclick="addToCart('Tomford Classic Shoe<',50000, 'images/Tomford Classic.png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Ferragamo Classic.png" alt="Product 25">
+              <h3>Ferragamo Classic Shoe</h3>
+              <p class="description">Classic tone, gentleman’s choice.</p>
+              <p class="price">₦49,000</p>
+              <button id="addtocart" onclick="addToCart('Ferragamo Classic Shoe<',49000, 'Ferragamo Classic.png')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fendi Blcak Shoe.JPG" alt="Product 26">
+              <h3>Fendi Blcak Shoe</h3>
+              <p class="description">Crafted for comfort and authority.</p>
+              <p class="price">₦48,000</p>
+              <button id="addtocart" onclick="addToCart('Fendi Blcak Shoe',480000, 'images/Fendi Blcak Shoe.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Dior Cross Black Pam.JPG" alt="Product 27">
+              <h3>Dior Cross Black Pam</h3>
+              <p class="description">Simple yet statement-making.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Dior Cross Black Pam',30000, 'Dior Cross Black Pam.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Valentino brown palms.JPG" alt="Product 28">
+              <h3>Valentino Brown Palms</h3>
+              <p class="description">Suede finish, timeless touch.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino Brown Palms',2500, 'images/Valentino brown palms.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Hermes palms.JPG" alt="Product 29">
+              <h3>Hermers Palms</h3>
+              <p class="description">Simple yet statement-making.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Hermers Palms',25000, 'images/Hermes palms.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Valentino palsm.JPG" alt="Product 30">
+              <h3>Valentino Palms</h3>
+              <p class="description">Bold, breathable, and comfortable.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino Palms',25000, 'images/Valentino palsm.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/half cover coperate shoe.JPG" alt="Product 31">
+              <h3>Cover Coperate Shoe</S></h3>
+              <p class="description">Soft suede, bold confidence.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Cover Coperate Shoe',35000, 'images/half cover coperate shoe.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/black hermers sliders.JPG" alt="Product 32">
+              <h3>Black Hermera Slide</h3>
+              <p class="description">Weekend-ready with urban charm.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Black Hermera Slide',25000, 'images/black hermers sliders.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/black VL half cover shoe.JPG" alt="Product 33">
+              <h3>VL Half Cover Shoe</h3>
+              <p class="description">Trendy look, relaxed fit.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('VL Half Cover Shoe',35000, 'images/black VL half cover shoe.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Valentino white palms.JPG" alt="Product 34">
+              <h3>Valentino White Palms</h3>
+              <p class="description">Luxury comfort for everyday wear.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino White Palms',25000, 'images/Valentino white palms.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Plain white slider.JPG" alt="Product 35">
+              <h3>Plain White Slide</h3>
+              <p class="description">Soft leather, rich tradition.</p>
+              <p class="price">₦23,000</p>
+              <button id="addtocart" onclick="addToCart('Plain White Slide<',23000, 'images/Plain white slider.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Hermers black.JPG" alt="Product 36">
+              <h3>Hermers Black Plams</h3>
+              <p class="description">Relaxed style with premium touch.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Hermers Black Plams',25000, 'images/Hermers black.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Dior palms.JPG" alt="Product 37">
+              <h3>Dior Palms</h3>
+              <p class="description">Effortless elegance for native looks.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Dior Palms',25000,'images/Dior palms.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Loius V black.JPG" alt="Product 38">
+              <h3>Loius V Black Palms</h3>
+              <p class="description">Bold simplicity for cool comfort.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('Loius V Black Palms',28000, 'images/Loius V black.JPG')">Add to Cart</button>
+            </div>
+             
+            <div class="product-card">
+              <img src="images/Balenciga black.JPG" alt="Product 39">
+              <h3>Balenciga Black Palms</h3>
+              <p class="description">Casual luxury for leisure moments.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Balenciga Black Palms',25000, 'images/Balenciga black.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Aristocrats half cover shoe white.JPG" alt="Product 40">
+              <h3>Aristocrats Half Cover Shoe</h3>
+              <p class="description">Smart-casual redefined in style.</p>
+              <p class="price">₦32,000</p>
+              <button id="addtocart" onclick="addToCart('Aristocrats Half Cover Shoe',32000, 'images/Aristocrats half cover shoe white.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Zara palms brown.JPG" alt="Product 41">
+              <h3>Zara Brown Palms</h3>
+              <p class="description">Handcrafted quality, timeless feel.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Brown Palms',25000, 'images/Zara palms brown.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Valention ash palms.JPG" alt="Product 42">
+              <h3>Valentino Ash Palms</h3>
+              <p class="description">Soft sole, durable design.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino Ash Palms',25000, 'images/Valention ash palms.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Aristocrats half cover shoe brown.JPG" alt="Product 43">
+              <h3>Aristocrats Half Cover Shoe</h3>
+              <p class="description">Smart-casual redefined in style.</p>
+              <p class="price">₦32,000</p>
+              <button id="addtocart" onclick="addToCart('Aristocrats Half Cover Shoe',35000, 'images/Aristocrats half cover shoe brown.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Zara plane brown palms.JPG" alt="Product 44">
+              <h3>Zara Plane Brown Palms</h3>
+              <p class="description">Traditional style, modern finish.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Plane Brown Palms',25000, 'images/Zara plane brown palms.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/UGG brown.JPG" alt="Product 45">
+              <h3>UGG Brown Palms</h3>
+              <p class="description">Pure comfort, rich culture.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('UGG Brown Palms',27000, 'images/UGG brown.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Zara black.JPG" alt="Product 46">
+              <h3>Zara Black Palms</h3>
+              <p class="description">Stylish slide for all occasions.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Black Palms',25000, 'images/Zara black.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/UGG lite green.JPG" alt="Product 47">
+              <h3>UGG Palms</h3>
+              <p class="description">Sleek design, easy fit.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('UGG Palms',27000, 'images/UGG lite green.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Versaci designer half shoe.JPG" alt="Product 48">
+              <h3>Versace Half Designer Shoe</h3>
+              <p class="description">Lightweight comfort, premium feel.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Versace Half Designer Shoe',35000, 'images/Versaci designer half shoe.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Valentino black.JPG" alt="Product 49">
+              <h3>Valentino Black Palms</h3>
+              <p class="description">Classy, comfy, and versatile.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino Black Palms',25000, 'images/Valentino black.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Dior grey palm.JPG" alt="Product 50">
+              <h3>Dior Grey Palms</h3>
+              <p class="description">Durable leather for daily ease.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Dior Grey Palms',25000, 'images/Dior grey palm.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Valentino blue.JPG" alt="Product 51">
+              <h3>Valentino Blue Palms</h3>
+              <p class="description">Simple. Stylish. Strong.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Valentino Blue Palms',25000, 'images/Valentino blue.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Alenxanderwang black.JPG" alt="Product 52">
+              <h3>Alenxanderwang Palms</h3>
+              <p class="description">Stylish design for every occasion.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Alenxanderwang Palms',25000, 'images/Alenxanderwang black.JPG')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card">
+              <img src="images/Designer cover palms.JPG" alt="Product 53">
+              <h3>Designer Cover Palms</h3>
+              <p class="description">Street-smart with a classy edge.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Designer Cover Palms',35000, 'images/Designer cover palms.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ferragamo black.JPG" alt="Product 54">
+              <h3>Ferragamo Black Palms</h3>
+              <p class="description">Fashion meets function in motion.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Ferragamo Black Palms',25000, 'images/Ferragamo black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/DG cross black.JPG" alt="Product 55">
+              <h3>DG Cross Balck Palms</h3>
+              <p class="description">Minimal look, maximum comfort.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('>DG Cross Balck Palms',25000, 'images/Ferragamo black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Giuafppe zanoti ash.JPG" alt="Product 56">
+              <h3>Giuafppe Zanoti Ash Palms</h3>
+              <p class="description">Suede finish, timeless touch.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Giuafppe Zanoti Ash Palms',35000, 'images/Giuafppe zanoti ash.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Gucci cross green.JPG" alt="Product 57">
+              <h3>Gucci Cross Green Palms</h3>
+              <p class="description">Simple yet statement-making.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Gucci Cross Green Palms',25000, 'images/Gucci cross green.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Giusfppe zanoti brown.JPG" alt="Product 58">
+              <h3>Giuafppe Zanoti Brown Palms</h3>
+              <p class="description">Bold, breathable, and comfortable.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Giuafppe Zanoti Brown Palms',35000, 'images/Giusfppe zanoti brown.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Gucci cross black.JPG" alt="Product 59">
+              <h3>Gucci Cross Black Palms</h3>
+              <p class="description">Weekend-ready with urban charm.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Gucci Cross Black Palms',25000, 'images/Gucci cross black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Loius V plane black.JPG" alt="Product 60">
+              <h3>Loius V Plane Black</h3>
+              <p class="description">Luxury comfort for everyday wear.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Loius V Plane Black',25000, 'images/Loius V plane black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Pedro cross.JPG" alt="Product 61">
+              <h3>Pedro Cross palms</h3>
+              <p class="description">Soft leather, rich tradition.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Pedro Cross palms',25000, 'images/Pedro cross.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Versaci stone cross black.JPG" alt="Product 62">
+              <h3>Versace Stone Cross Black</h3>
+              <p class="description">Relaxed style with premium touch.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Versace Stone Cross Black',25000, 'images/Versaci stone cross black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Designer Half cover.JPG" alt="Product 63">
+              <h3>Designer Half cover</h3>
+              <p class="description">Stylish design for every occasion.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Designer Half cover',35000, 'images/Designer Half cover.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Hermers buckle brown.JPG" alt="Product 64">
+              <h3>Hermers buckle brown</h3>
+              <p class="description">Smooth finish, pure sophistication.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Hermers buckle brown',43000, 'images/Hermers buckle brown.JPG')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+              <img src="images/Gucci Half Cover 1.JPG" alt="Product 65">
+              <h3>Gucci Half Cover</h3>
+              <p class="description">Fashion meets function in motion.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Gucci Half Cover',35000, 'images/Gucci Half Cover 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Versace stone 1.JPG" alt="Product 66">
+              <h3>Versace stone </h3>
+              <p class="description">Designed for power, built for success.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Versace stone ',43000, 'images/Versace stone 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Loius V half cover 1.JPG" alt="Product 67">
+              <h3>Loius V half cover</h3>
+              <p class="description">Minimal look, maximum comfort.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Loius V half cover',35000, 'images/Loius V half cover 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Designer shoe brown.JPG" alt="Product 68">
+              <h3>Designer shoe brown</h3>
+              <p class="description">Handcrafted luxury for true professionals.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer shoe brown',43000, 'images/Designer shoe brown.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Gucci Half cover 2.JPG" alt="Product 69">
+              <h3>Gucci Half cover</h3>
+              <p class="description">Suede finish, timeless touch.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Gucci Half cover',35000, 'images/Gucci Half cover 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Designer show black.JPG" alt="Product 70">
+              <h3>Designer black shoe</h3>
+              <p class="description">Classic tone, modern gentleman’s choice.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',43000, 'images/Designer show black.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 1.JPG" alt="Product 71">
+              <h3>Fendi Black Shoe</h3>
+              <p class="description">Crafted for comfort and authority.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Fendi Black Shoe',43000, 'images/shoe 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 3.JPG" alt="Product 72">
+              <h3>Half Cover Shoe</h3>
+              <p class="description">Simple yet statement-making.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Half Cover Shoe' ,30000, 'images/shoe 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 4.JPG" alt="Product 73">
+              <h3>Zara Slider</h3>
+              <p class="description">Effortless elegance for native looks.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Slider',25000, 'images/shoe 4.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 5.JPG" alt="Product 74">
+              <h3>Loius Vuitton Slider</h3>
+              <p class="description">Bold simplicity for cool comfort.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Loius Vuitton Slider',25000, 'images/shoe 5.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 6.JPG" alt="Product 75">
+              <h3>Cross Black Slider</h3>
+              <p class="description">Casual luxury for leisure moments.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Cross Black slider',25000, 'images/shoe 6.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 7.JPG" alt="Product 76">
+              <h3>Loius Vuitton shoe</h3>
+              <p class="description">The definition of business style.</p>
+              <p class="price">₦48,000</p>
+              <button id="addtocart" onclick="addToCart('Loius Vuitton Shoe',48000, 'images/shoe 7.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 8.JPG" alt="Product 77">
+              <h3>Zara Slider</h3>
+              <p class="description">Handcrafted quality, timeless feel.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',25000, 'images/shoe 8.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/shoe 9.JPG" alt="Product 78">
+              <h3>Designer Cross slider</h3>
+              <p class="description">Soft sole, durable design.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Designer Cross Slider',25000, 'images/shoe 9.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 10.JPG" alt="Product 79">
+              <h3>Pedro Designer sliders</h3>
+              <p class="description">Traditional style, modern finish.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',25000, 'images/shoe 10.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 11.JPG" alt="Product 80">
+              <h3>Pedro Designer sliders</h3>
+              <p class="description">Pure comfort, rich culture.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Pedro Designer sliders',25000, 'images/shoe 11.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 12.JPG" alt="Product 81">
+              <h3>Designer Shoe</h3>
+              <p class="description">Elegant design for confident men.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer Shoe',43000, 'images/shoe 12.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 13.JPG" alt="Product 82">
+              <h3>Designer black shoe</h3>
+              <p class="description">Stylish, durable, and truly refined.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',43000, 'images/shoe 13.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 14.JPG" alt="Product 83">
+              <h3> Fendi Designer Slider</h3>
+              <p class="description">Stylish slide for all occasions..</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',25000, 'images/shoe 14.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 16.JPG" alt="Product 84">
+              <h3>Gevenchy Designer black shoe</h3>
+              <p class="description">Effortless class in every step.</p>
+              <p class="price">₦47,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',47000, 'images/shoe 16.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/shoe 25.JPG" alt="Product 85">
+              <h3>Designer black shoe</h3>
+              <p class="description">Premium leather, perfect fit.</p>
+              <p class="price">₦45,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',45000, 'images/shoe 25.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Zara Brown Pams 1.JPG" alt="Product 86">
+              <h3>Zara Brown Pams</h3>
+              <p class="description">Sleek design, easy fit.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Zara Brown Pams',30000, 'images/Zara Brown Pams 1.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Prada Brown Cross Pams.JPG" alt="Product 87">
+              <h3>Prada Brown Cross Pams</h3>
+              <p class="description">Classy, comfy, and versatile.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',28000, 'images/Prada Brown Cross Pams.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Louis Vuitton Black Blue Pams.JPG" alt="Product 88">
+              <h3>Louis Vuitton Pams</h3>
+              <p class="description">Durable leather for daily ease.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',25000, 'Louis Vuitton Black Blue Pams.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Zara Black pams.JPG" alt="Product 89">
+              <h3>Zara Black pams</h3>
+              <p class="description">Simple. Stylish. Strong.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',30000, 'Zara Black pams.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Aristocrats Blue Cross Pams.JPG" alt="Product 90">
+              <h3>Aristocrats Blue Cross</h3>
+              <p class="description">Stylish design for every occasion.</p>
+              <p class="price">₦23,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',23000, 'Aristocrats Blue Cross Pams.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Gucci Stone Pams.JPG" alt="Product 91">
+              <h3>Gucci Half cover</h3>
+              <p class="description">Bold, breathable, and comfortable.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',30000, 'Gucci Stone Pams.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Aristocrats Black Cross Pams.JPG" alt="Product 92">
+              <h3>Aristocrats Black Cross</h3>
+              <p class="description">Fashion meets function in motion.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',28000, 'Aristocrats Black Cross Pams.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Gucci Blask Shoe.JPG" alt="Product 93">
+              <h3>Gucci black shoe</h3>
+              <p class="description">Smooth finish, pure sophistication.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',43000, 'Gucci Blask Shoe.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Ferragamo Brwon Shoe.JPG" alt="Product 94">
+              <h3>Ferragamo Brwon Shoe</h3>
+              <p class="description">Designed for power, built for success.</p>
+              <p class="price">₦47,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',47000, 'Ferragamo Brwon Shoe.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Versaci Balck Sone Strap Shoe.JPG" alt="Product 95">
+              <h3>Versaci Balck Shoe</h3>
+              <p class="description">Sleek comfort meets classic style.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',43000, 'Versaci Balck Sone Strap Shoe.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Givenchy Gray Designer Shoe.JPG" alt="Product 96">
+              <h3>Givenchy Designer Shoe</h3>
+              <p class="description">Smart lace-up for everyday class.</p>
+              <p class="price">₦47,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',47000, 'Givenchy Gray Designer Shoe.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Ferragamo Designer Shoe2.png" alt="Product 97">
+              <h3>Ferragamo Designer Shoe</h3>
+              <p class="description">Handcrafted luxury for true professionals.</p>
+              <p class="price">₦48,000</p>
+              <button id="addtocart" onclick="addToCart('Ferragamo Designer Shoe',48000,'images/Ferragamo Designer Shoe2.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Richwanaz Designer Shoe.png" alt="Product 98">
+              <h3>Richwanaz Designer Shoe</h3>
+              <p class="description">Bold, timeless, and boardroom-ready.</p>
+              <p class="price">₦50,000</p>
+              <button id="addtocart" onclick="addToCart('Richwanaz Designer Shoe',50000, 'images/Richwanaz Designer Shoe.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/TomFord Brwon Shoe 1.png" alt="Product 99">
+              <h3>TomFord Brwon Shoe</h3>
+              <p class="description">Premium polish for executive confidence.</p>
+              <p class="price">₦47,000</p>
+              <button id="addtocart" onclick="addToCart('TomFord Brwon Shoe',47000, 'images/TomFord Brwon Shoe 1.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Givenchy Brown Designer  1.png" alt="Product 100">
+              <h3>Givenchy Brown Designer</h3>
+              <p class="description">Classic leather elegance for gentlemen.</p>
+              <p class="price">₦55,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',55000, 'images/Givenchy Brown Designer  1.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Fendi brown shoe.png" alt="Product 101">
+              <h3>Fendi brown shoe</h3>
+              <p class="description">Bold, timeless, and boardroom-ready.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Fendi brown shoe',43000, 'images/Fendi brown shoe.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Louis V black shoe 1.jpg" alt="Product 102">
+              <h3>Louis V black shoe </h3>
+              <p class="description">Stylish, durable, and truly refined.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer black shoe',43000, 'images/Louis V black shoe 1.jpg')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Designer shoe Brown.png" alt="Product 103">
+              <h3>Designer shoe Brown</h3>
+              <p class="description">Premium leather, perfect fit.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer shoe Brown',43000, 'images/Designer shoe Brown.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Tomford Designer Classic.png" alt="Product 104">
+              <h3>Tomford Designer Classic</h3>
+              <p class="description">Formal cotton shirt for men, amazing fit .</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Tomford Designer Classic',43000, 'images/Tomford Designer Classic.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/OGGI Classic.png" alt="Product 105">
+              <h3>OGGI Classic Shoe</h3>
+              <p class="description">Formal cotton shirt for men, amazing fit .</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('OGGI Classic Shoe',43000, 'images/OGGI Classic.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Classic Half Cover.png" alt="Product 106">
+              <h3>Classic Half Cover Shoe</h3>
+              <p class="description">Elegant design for confident men.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Classic Half Cover Shoe',43000, 'images/Classic Half Cover.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Designer Classic Strap.png" alt="Product 107">
+              <h3>Designer Classic Strap</h3>
+              <p class="description">Sleek comfort meets classic style.</p>
+              <p class="price">₦43,000</p>
+              <button id="addtocart" onclick="addToCart('Designer Classic Strap',43000, 'images/Designer Classic Strap.png')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/Black Desinger Shoe.JPG" alt="Product 108">
+              <h3>Black Desinger Shoe</h3>
+              <p class="description">Designed for power, built for success.</p>
+              <p class="price">₦44,000</p>
+              <button id="addtocart" onclick="addToCart('Black Desinger Shoe',44000, 'images/Black Desinger Shoe.JPG')">Add to Cart</button>
+            </div>
+
+        </div>
+      </section>
+      <script src="footware.js">
+        
+      </script>      
+</body>
+</html>

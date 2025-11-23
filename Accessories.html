@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gleent Phone Accessories</title>
+    <link rel="stylesheet" href="Accessories.css" type="text/css">
+</head>
+<body>
+    <!-- nav bar -->
+  <nav id="flex">
+    <div id="left-view">
+      <a href="#"><img class="G-IMG" src="images/menu.png" >Gleent</a>
+    </div>
+    <div id="middle-view">
+      <div id="menu-list">
+        <a href="index.html">Home</a>
+        <a href="Category.html">Category</a>
+        <a href="Services.html">Services</a>
+        <a href="Aboutus.html">About us</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </div>
+    <div id="right-view">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Show All</button>
+        <a href="Accessories-cart.html" id="cart-link">🛒<span id="cart-count">0</span></a>
+      </div>
+      
+    </div>
+  </nav>  
+ 
+  <div id="store-layout">
+    <div id="left-layout">
+        <section id="left-store">
+          <h3 id="left-store-h">STORE</h3>
+              <ul id="store-menu-list"> 
+               <a href="Category.html"><li>
+                    <button id="store1">Gleent Aura</button> 
+                </li> </a> 
+                
+                <a href="Accessories.html"><li>
+                    <button id="store1">Gleent SmartGear</button>  
+                </li></a>  
+                <a href="footware.html"><li>
+                    <button id="store1">Gleent StepUp</button>
+                </li></a> 
+            </ul>
+        </section>
+
+      
+        <div id="link">
+          <div id="Quick-link">
+            <div id="Quick-link">
+              <h3 id="quick-head">Gleent SmartGear</h3>
+              <p id="quick-text">
+                Your one-stop destination for premium phone accessories designed for durability, style, and everyday convenience. 
+                From fast chargers to earbuds, power banks, pouches, screen guards,
+                 and more — we provide reliable products that upgrade your mobile experience.
+              </p>
+          </div> 
+             </div>           
+        </div>
+      </div>
+       
+      <div id="middle-layout">
+        <div id="store-heads">
+            <div id="store">
+              <section id="featured-carousel">
+                <h3>Trending Picks</h3>
+                <div class="carousel-container">
+                  <button class="carousel-btn prev">&#10094;</button>
+                  <div class="carousel-track">
+                    <div class="carousel-card">
+                      <img src="images/Earbud 3.JPG" alt="Product 68">
+                      <h3>Oraimo SpaceBud</h3>
+                      <p class="description">Spacbud WirelessEarbud.</p>
+                      <p class="price">₦23,000</p>
+                    </div>
+                   
+                    <div class="carousel-card">
+                      <img src="images/Wireless Bluetooth Speaker 11.JPG" alt="Product 45">
+                      <h3>Zealot Speaker</h3>
+                      <p class="description">Waterproof Stereo Subwoofer Speaker.</p>
+                      <p class="price">₦38,000</p>
+                      
+                    </div>
+                    <div class="carousel-card">
+                      <img src="images/Wireless Bluetooth Speaker 27.JPG" alt="Product 60">
+                      <h3> Wireless Speaker</h3>
+                      <p class="description">Portable Wireless Speaker.</p>
+                      <p class="price">₦29,000</p>
+                    </div>
+
+                    <div class="carousel-card">
+                      <img src="images/earbud 10.JPG" alt="Product 72">
+                      <h3>D68 Wireless Earbud</h3>
+                      <p class="description">Noise cancellation Airbud.</p>
+                      <p class="price">₦6,000</p>
+                    </div>
+
+                    <div class="carousel-card">
+                      <img src="images/head Phone 10.JPG" alt="Product 89">
+                      <h3>Wireless Headphone</h3>
+                      <p class="description">Wireless Headset Headphone.</p>
+                      <p class="price">₦10,000</p>
+                    </div>
+                  </div>
+                  <button class="carousel-btn next">&#10095;</button>
+                </div>
+                <div class="carousel-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </section>
+               
+            </div> 
+                
+        </div>
+    
+       
+
+        <h1 id="layout-text">Featured Items</h1>
+        <div class="shop-layout">
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="images/portable usb humidifier.WEBP" alt="Product 1">
+              <h3>Mini USB humidifier</h3>
+              <p class="description">Oil fragrance spray humidifier.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Mini USB humidifier',5000, 'images/portable usb humidifier.WEBP')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Portable USB humidifier black.JPG" alt="Product 2">
+              <h3>Portable Mini humidifier</h3>
+              <p class="description">Cool Mist Mini USB humidifier.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart"  onclick="addToCart('Portable Mini humidifier',6000, 'images/Portable USB humidifier black.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/earpod.JPG" alt="Product 3">
+              <h3>Timmack Wireless Earpod</h3>
+              <p class="description">Sterao Sound Headest Earpod.</p>
+              <p class="price">₦5,300</p>
+              <button id="addtocart" onclick="addToCart('Timmack Wireless Earpod',5300,'images/earpod.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Portable USB humidifier white.JPG" alt="Product 4">
+              <h3>Portable USB Humidifier</h3>
+              <p class="description">Cool Mist Mini USB humidifier.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Portable USB Humidifier',6000)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Portable USB Humidifier 1 (1).JPG" alt="Product 5">
+              <h3>H.0 Portable humidifier</h3>
+              <p class="description"> Colorful Mini USB humidifier.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('H.0 Portable humidifier',8000)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Portable USB Humidifier 1 (2).JPG" alt="Product 6">
+              <h3>USB Portabale Humidifier</h3>
+              <p class="description">Cool Mist Air Humidifier</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('USB Portabale Humidifier',5000)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fast charger 1.JPG" alt="Product 7">
+              <h3>Double Fast Charger</h3>
+              <p class="description">120w Charger with type-C Cable.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Double Fast Charger',8000, 'images/Fast charger 1.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Portable USB Humidifier round.WEBP" alt="Product 8">
+              <h3>Mini Portable Humidifier</h3>
+              <p class="description">fragrance for all-day freshness.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Human Hair Wig',8000, 'Portable USB Humidifier round.WEBP')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Portable USB Humidifier brown round.JPG" alt="Product 9">
+              <h3>USB Mini humidifier</h3>
+              <p class="description">Long-lasting, all-day freshness.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('USB Mini humidifier<',6000)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/airpod.jpeg" alt="Product 10">
+              <h3>Apple AirPods</h3>
+              <p class="description">Wireless earbuds with noise cancellation.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Apple Airpod',7000, images/airpod.jpeg)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fast charger 2.JPG" alt="Product 11">
+              <h3>Slik Fast Charger</h3>
+              <p class="description">SHPLUS 42w Fast Charger.</p>
+              <p class="price">₦6,500</p>
+              <butto id="addtocart" onclick="addToCart('Slik Fast Charger',6500, 'images/Fast charger 2.JPG')">Add to Cart</butto>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fast charger 3.JPG" alt="Product 12">
+              <h3>Supper Fast Charger</h3>
+              <p class="description">Speed. Strength. Instant Charge..</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Supper Fast Charger',6000, 'images/Fast charger 3.JPG')">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fast charger 4.JPG" alt="Product 13">
+              <h3> 50w Fast Dual Charger</h3>
+              <p class="description">Type-c Super Fast Charger.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Fast Dual Charger',7000)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fast charger 5.JPG" alt="Product 14">
+              <h3>Samsung 45w Fast Charger</h3>
+              <p class="description">Type-C Super Fast Charger.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Samsung 45w Fast Charger',6000)">Add to Cart</button>
+            </div>
+      
+            <div class="product-card">
+              <img src="images/Fast charger 6.JPG" alt="Product 15">
+              <h3>45w Super Fast Charger</h3>
+              <p class="description">Super Adaptive Charger.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('45w Super Fast Charger',6000)">Add to Cart</button>
+            </div>
+               
+
+            <div class="product-card">
+              <img src="images/Fast charger 7.JPG" alt="Product 16">
+              <h3>35w Iphone Charger</h3>
+              <p class="description">Type-C Lightning Fast Charger.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('35w Iphone Charger',7000)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Charging Cable 1.JPG" alt="Product 17">
+              <h3>20w Iphone Fast Cable</h3>
+              <p class="description">Fast Lightning Cable.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('20w Iphone Fast Cable',4000, 'images/Charging Cable 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Charging Cable 2.JPG" alt="Product 18">
+              <h3>Andriod Type-c Cable</h3>
+              <p class="description">Fast Lightning Cable.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('Andriod Type-c Cable',4000, 'images/Charging Cable 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Charging Cable 3.JPG" alt="Product 19">
+              <h3>120w 3in1 Fast Cable</h3>
+              <p class="description">Type-c/Micro USB/IOS.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('120w 3in1 Fast Cable',4000, 'images/Charging Cable 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Charging Cable 4.JPG" alt="Product 20">
+              <h3>120W 3in1 Fast Cable</h3>
+              <p class="description">Multiple Charging Cable.</p>
+              <p class="price">₦3,500</p>
+              <button id="addtocart" onclick="addToCart('120W 3in1 Fast Cable',3500,'images/Charging Cable 4.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Charging Cable 7.JPG" alt="Product 21">
+              <h3>2m Fast Charging Cable</h3>
+              <p class="description">Type-C To Tpyes-C.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('2m Fast Charging Cable',6000, 'images/Charging Cable 7.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Charging Cable 8.JPG" alt="Product 22">
+              <h3>2M Fast Charging Cable</h3>
+              <p class="description">Type-c to Iphone Cable.</p>
+              <p class="price">₦4,000</p>
+              <button id="addtocart" onclick="addToCart('2M Fast Charging Cable',4000, 'images/Charging Cable 8.JPG')">Add to Cart</button>
+            </div>
+          
+
+            <div class="product-card">
+              <img src="images/Power Bank 1.JPG" alt="Product 23">
+              <h3>20000mAh Power Bank</h3>
+              <p class="description">Fast Charging Capacity/Cable.</p>
+              <p class="price">₦15,000</p>
+              <button id="addtocart" onclick="addToCart('20000mAh Power Bank',15000, 'images/Power Bank 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 2.JPG" alt="Product 24">
+              <h3>50000mAh Philly Power Bank</h3>
+              <p class="description">Super Fast with LED Light.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('Apple Iphone 14',27000, 'images/Power Bank 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 3.JPG" alt="Product 25">
+              <h3>21800mAh Philly Power Bnak</h3>
+              <p class="description">LED Display With 4in1 Cable.</p>
+              <p class="price">₦12,000</p>
+              <button id="addtocart" onclick="addToCart('21800mAh Philly Power Bnak',12000, 'images/Power Bank 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 4.JPG" alt="Product 26">
+              <h3>20000mAh Power Bank</h3>
+              <p class="description"> Easypie Ultra Slim With 4in1 Cable.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('20000mAh Easypie Power Bank',10000, 'images/Power Bank 4.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 5.JPG" alt="Product 27">
+              <h3>20000 mAh Power Bank</h3>
+              <p class="description">KingElec Ultra Slim and Portable.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('20000 mAh Power Bank',10000, 'images/Power Bank 5.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 7.JPG" alt="Product 28">
+              <h3>Newage 22500mAh Power Bank</h3>
+              <p class="description">Type-C input and Output With Touch Light.</p>
+              <p class="price">₦17,000</p>
+              <button id="addtocart" onclick="addToCart('Newage 22500mAh Power Bank',17000, 'images/Power Bank 7.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 8.JPG" alt="Product 29">
+              <h3>Newage 30000mAh Power Bank</h3>
+              <p class="description">Type-C Input and Output With Touch Light.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Newage 30000mAh Power Bank',30000, 'images/Power Bank 8.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 9.JPG" alt="Product 30">
+              <h3>50000mAh 6ww Philly Power Bank</h3>
+              <p class="description">66w Super Fast Charge With LED Display.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('50000mAh Philly Power Bank',30000, 'images/Power Bank 9.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 11.JPG" alt="Product 31">
+              <h3>20000mAh Itel Power Bank</h3>
+              <p class="description">20w Fast Charge With Touch Light.</p>
+              <p class="price">₦17,000</p>
+              <button id="addtocart" onclick="addToCart('20000mAh Itel Power Bank',17000, 'images/Power Bank 11.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 12.JPG" alt="Product 32">
+              <h3>27000mAh Oraimo Power Bak</h3>
+              <p class="description">Super Fast 22.5w With LED Display.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('27000mAh Oraimo Power Bnak',28000, 'images/Power Bank 12.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 13.JPG" alt="Product 33">
+              <h3>10000mAh Fast Power Bank</h3>
+              <p class="description">Slim Super Fast Charge.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('10000mAh Fast Power Bank',10000, 'images/Power Bank 13.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Power Bank 14.JPG" alt="Product 34">
+              <h3>Itel 60000mAh Power Bnak</h3>
+              <p class="description">65w Universal Charging Compatibility.</p>
+              <p class="price">₦60,000</p>
+              <button id="addtocart" onclick="addToCart('Itel 60000mAh Power Bnak',60000, 'images/Power Bank 14.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 1.JPG" alt="Product 35">
+              <h3> Wireless Bluetooth Speaker</h3>
+              <p class="description">Bluetooth Speaker With RGB Night Lights.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Mini Wireless Bluetooth Speaker',80000, 'images/Wireless Bluetooth Speaker 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 2.JPG" alt="Product 36">
+              <h3>Wireless Bluetooth Speaker</h3>
+              <p class="description">Mini Wireless Handy  Bluetooth Speaker.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('Handy Wireless Bluetooth Speaker',10000, 'images/Wireless Bluetooth Speaker 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 3.JPG" alt="Product 37">
+              <h3>T&G Bluetooth Speaker</h3>
+              <p class="description">V5.3 Stereo Surround Sound.</p>
+              <p class="price">₦13,000</p>
+              <button id="addtocart" onclick="addToCart('T&G Bluetooth Speaker',13000, 'images/Wireless Bluetooth Speaker 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 4.JPG" alt="Product 38">
+              <h3>Koleer Wireless Speaker</h3>
+              <p class="description">Waterproof Mini Koleer S39.</p>
+              <p class="price">₦17,000</p>
+              <button id="addtocart" onclick="addToCart('Koleer Wireless Speaker',17000, 'images/Wireless Bluetooth Speaker 4.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 5.JPG" alt="Product 39">
+              <h3>Tribit Wireless Speaker</h3>
+              <p class="description">Tribit StormBox Wireless Speaker.</p>
+              <p class="price">₦53,000</p>
+              <button id="addtocart" onclick="addToCart('Tribit Wireless Speaker',53000, 'images/Wireless Bluetooth Speaker 5.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 6.JPG" alt="Product 40">
+              <h3>Js-111 Wireless Speaker</h3>
+              <p class="description">Mimi Portable Wireless Speaker.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('Js-111 Wireless Speaker',10000, 'images/Wireless Bluetooth Speaker 6.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 7.JPG" alt="Product 41">
+              <h3>Ws-906 Wireless Speaker</h3>
+              <p class="description">Mini Poratble Wireless Speaker.</p>
+              <p class="price">₦9,000</p>
+              <button id="addtocart" onclick="addToCart('Ws-906 Wireless Speaker',9000, 'images/Wireless Bluetooth Speaker 7.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 8.JPG" alt="Product 42">
+              <h3>T&G Bluetooth Speaker</h3>
+              <p class="description">Waterproof Mini Portable Speaker.</p>
+              <p class="price">₦9,000</p>
+              <button id="addtocart" onclick="addToCart('T&G Bluetooth Speaker',9000, 'images/Wireless Bluetooth Speaker 8.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 9.JPG" alt="Product 43">
+              <h3>Zealot Wireless Speaker</h3>
+              <p class="description"> Portable Travel Subwoofer Speaker.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot Wireless Speaker',28000, 'images/Wireless Bluetooth Speaker 9.JPG')">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 10.JPG" alt="Product 44">
+              <h3>X811 Wireless Speaker</h3>
+              <p class="description">Portable Mini Wireless Speaker.</p>
+              <p class="price">₦10,500</p>
+              <button id="addtocart" onclick="addToCart('X811 Wireless Speaker',10500, 'images/Wireless Bluetooth Speaker 10.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 11.JPG" alt="Product 45">
+              <h3>Zealot S53 Wireless Speaker</h3>
+              <p class="description">Waterproof Stereo Subwoofer Speaker.</p>
+              <p class="price">₦38,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S53 Wireless Speaker',38000, 'images/Wireless Bluetooth Speaker 11.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 12.JPG" alt="Product 46">
+              <h3>LP V99 Wireless Speaker</h3>
+              <p class="description">Big Sound, Strong Bass Speaker.</p>
+              <p class="price">₦14,000</p>
+              <button id="addtocart" onclick="addToCart('LP V99 Wireless Speaker',14000, 'images/Wireless Bluetooth Speaker 12.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 13.JPG" alt="Product 47">
+              <h3>Super Bass Wireless Speaker</h3>
+              <p class="description">Portable Wireless Speaker.</p>
+              <p class="price">₦18,000</p>
+              <button id="addtocart" onclick="addToCart('Super Bass Wireless Speaker',18000, 'images/Wireless Bluetooth Speaker 13.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 14.JPG" alt="Product 48">
+              <h3>Zealot S67 Wireless Speaker</h3>
+              <p class="description">High Capacity Wireless Speaker.</p>
+              <p class="price">₦115,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S67 Wireless Speaker',115000, 'images/Wireless Bluetooth Speaker 14.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 15.JPG" alt="Product 49">
+              <h3>Havit Wireless Speaker</h3>
+              <p class="description">Mini Wireless Speaker.</p>
+              <p class="price">₦13,000</p>
+              <button id="addtocart" onclick="addToCart('Havit Wireless Speaker',13000, 'images/Wireless Bluetooth Speaker 15.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 16.JPG" alt="Product 50">
+              <h3>zealot S31 Wireless Speaker</h3>
+              <p class="description">Portable Mini Wireless Speaker.</p>
+              <p class="price">₦27,000</p>
+              <button id="addtocart" onclick="addToCart('zealot S31 Wireless Speaker',27000, 'images/Wireless Bluetooth Speaker 16.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 17.JPG" alt="Product 51">
+              <h3>Baseno Wireless Speaker</h3>
+              <p class="description">Bas-015 Portable Speaker.</p>
+              <p class="price">₦11,000</p>
+              <button id="addtocart" onclick="addToCart('Baseno Wireless Speaker',11000, 'images/Wireless Bluetooth Speaker 17.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 18.JPG" alt="Product 52">
+              <h3>Zealot S8 Wireless Speaker</h3>
+              <p class="description">3D Hifi Wireless Speaker.</p>
+              <p class="price">₦40,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S8 Wireless Speaker',40000, 'images/Wireless Bluetooth Speaker 18.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 19.JPG" alt="Product 53">
+              <h3>Zealot S39 Wireless Speaker</h3>
+              <p class="description">High Capacity Super Bass Speaker.</p>
+              <p class="price">₦94,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S39 Wireless Speaker',94000, 'images/Wireless Bluetooth Speaker 19.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 26.JPG" alt="Product 54">
+              <h3>Koleer S29 Wireless Speaker</h3>
+              <p class="description">Handy Mini Wireless Speaker.</p>
+              <p class="price">₦12,000</p>
+              <button id="addtocart" onclick="addToCart('Koleer S29 Wireless Speaker',12000, 'images/Wireless Bluetooth Speaker 26.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 21.JPG" alt="Product 55">
+              <h3>Eageat Wireless Speaker</h3>
+              <p class="description"> Mini Wireless Speaker With LED Display</p>
+              <p class="price">₦15,000</p>
+              <button id="addtocart" onclick="addToCart('Eageat Wireless Speaker',15000, 'images/Wireless Bluetooth Speaker 21.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 22.JPG" alt="Product 56">
+              <h3>Zealot S55 Wireless Speaker</h3>
+              <p class="description">Mini Wireless Speaker.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S55 Wireless Speaker',25000, 'images/Wireless Bluetooth Speaker 22.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 23.JPG" alt="Product 57">
+              <h3>Charging Bluetooth Speaker</h3>
+              <p class="description">Phone Charhing, Desktop Lamp Speaker.</p>
+              <p class="price">₦13,000</p>
+              <button id="addtocart" onclick="addToCart('Charging Bluetooth Speaker',13000, 'images/Wireless Bluetooth Speaker 23.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 24.JPG" alt="Product 58">
+              <h3>Zealot S42 Wireless Speaker</h3>
+              <p class="description">High mini Wireless Speaker.</p>
+              <p class="price">₦38,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S42 Wireless Speaker',38000, 'images/Wireless Bluetooth Speaker 24.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 25.JPG" alt="Product 59">
+              <h3>Zealot S67 Wireless Speaker</h3>
+              <p class="description">High Capacity Wireless Speaker.</p>
+              <p class="price">₦120,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S67 Wireless Speaker',120000, 'images/Wireless Bluetooth Speaker 25.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 27.JPG" alt="Product 60">
+              <h3>Zealot S53 Wireless Speaker</h3>
+              <p class="description">Portable Wireless Speaker.</p>
+              <p class="price">₦29,000</p>
+              <button id="addtocart" onclick="addToCart('Zealot S53 Wireless Speaker',29000, 'images/Wireless Bluetooth Speaker 27.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth Speaker 28.JPG" alt="Product 61">
+              <h3>T&G 437 Wireless Speaker</h3>
+              <p class="description">Waterproof Bass Woofer With LED Light.</p>
+              <p class="price">₦28,000</p>
+              <button id="addtocart" onclick="addToCart('T&G 437 Wireless Speaker',28000, 'images/Wireless Bluetooth Speaker 28.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Charger 1.JPG" alt="Product 62">
+              <h3>Type-c Wireless Charger</h3>
+              <p class="description"> Samsung Type-C Wireless Fast Charger.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Samsung Type-c Wireless Charger',8000, 'images/Wireless Charger 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Charger 2.JPG" alt="Product 63">
+              <h3>Wireless 5in1 Charger</h3>
+              <p class="description">Wireless Dock Station 15w Fast.</p>
+              <p class="price">₦34,000</p>
+              <button id="addtocart" onclick="addToCart('Wireless 5in1 Charger',34000, 'images/Wireless Charger 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Charger 3.JPG" alt="Product 64">
+              <h3>Wireless Charging Pad</h3>
+              <p class="description">Samsung Fast Charger For All Device.</p>
+              <p class="price">₦12,000</p>
+              <button id="addtocart" onclick="addToCart('Wireless Charging Pad',12000, 'images/Wireless Charger 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth 29.JPG" alt="Product 65">
+              <h3>Koleer S31 Wireless Speaker</h3>
+              <p class="description"> Portable Wireless Speaker.</p>
+              <p class="price">₦19,000</p>
+              <button id="addtocart" onclick="addToCart('Koleer S31 Wireless Speaker',91000, 'images/Wireless Bluetooth 29.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Wireless Bluetooth 30.JPG" alt="Product 66">
+              <h3>Charging Bluetooth Speaker</h3>
+              <p class="description">Phone Charging, Desktop Lamp Speaker.</p>
+              <p class="price">₦12,000</p>
+              <button id="addtocart" onclick="addToCart('Apple Iphone 14',12000, 'images/Wireless Bluetooth 30.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Earbud 2.JPG" alt="Product 67">
+              <h3>Asus Wireless Earbud</h3>
+              <p class="description">Long Battery 36H Playtime, Waterproof.</p>
+              <p class="price">₦9,000</p>
+              <button id="addtocart" onclick="addToCart('Asus Wireless Earbud',9000, 'images/Earbud 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Earbud 3.JPG" alt="Product 68">
+              <h3>Oraimo SpaceBud</h3>
+              <p class="description">Spacbud N ACN Original WirelessEarbud.</p>
+              <p class="price">₦23,000</p>
+              <button id="addtocart" onclick="addToCart('Oraimo SpaceBud',23000, 'images/Earbud 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Earbud 4.JPG" alt="Product 69">
+              <h3>Bolizma Wireless Earbud</h3>
+              <p class="description">Lightweight Comfort,with Long Battery.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Bolizma Wireless Earbud',8000, 'images/Earbud 4.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Earbud 5.JPG" alt="Product 70">
+              <h3>Samsung Wireless Earbud</h3>
+              <p class="description">Galaxy Noise cancellation ANC Earbud.</p>
+              <p class="price">₦19,000</p>
+              <button id="addtocart" onclick="addToCart('Samsung Wireless Earbud',19000, 'images/Earbud 5.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 9.JPG" alt="Product 71">
+              <h3>Pro5s Wireless Earpod</h3>
+              <p class="description">Heavy Bass For IOS and Andriod.</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Pro5s Wireless Earpod',7000, 'images/earbud 9.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 10.JPG" alt="Product 72">
+              <h3>D68 Wireless Earbud</h3>
+              <p class="description">Noise cancellation, for IOS and Andriod.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('D68 Wireless Earbud',6000, 'images/earbud 10.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 11.JPG" alt="Product 73">
+              <h3>Wireless Earbud</h3>
+              <p class="description">Long Battery Earbud for IOS and Andriod.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Wireless Earbud',6000, 'images/earbud 11.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 12.JPG" alt="Product 74">
+              <h3>Pro5s Wireless Earbud</h3>
+              <p class="description">For IOS and Andriod Devices.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Pro5s Wireless Earbud',8000, 'images/earbud 12.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 13.JPG" alt="Product 75">
+              <h3>Realme Wireless Earbud</h3>
+              <p class="description">Long Battery Sterao Headpod.</p>
+              <p class="price">₦25,000</p>
+              <button id="addtocart" onclick="addToCart('Realme Wireless Earbud',25000,'images/earbud 13.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 15.JPG" alt="Product 76">
+              <h3>Wireless Earbud</h3>
+              <p class="description">Wireless Bluetooth Earbud for ALL Device.</p>
+              <p class="price">₦7,500</p>
+              <button id="addtocart" onclick="addToCart('Wireless Earbud',7500, 'images/earbud 15.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 16.JPG" alt="Product 77">
+              <h3>Wireless Touch Screen Earpod</h3>
+              <p class="description">Noise Cancellation for IOS and Andriod.</p>
+              <p class="price">₦35,000</p>
+              <button id="addtocart" onclick="addToCart('Wireless Touch Screen Earpod',35000, 'images/earbud 16.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 17.JPG" alt="Product 78">
+              <h3>Pro5s Wireless Earbud</h3>
+              <p class="description">Long Battery for ALL Device.</p>
+              <p class="price">₦7,500</p>
+              <button id="addtocart" onclick="addToCart('Pro5s Wireless Earbud',7500, 'images/earbud 17.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/earbud 18.JPG" alt="Product 79">
+              <h3>Samsung Wireless Earbud</h3>
+              <p class="description">Noise Cancellation With Long Battery.</p>
+              <p class="price">₦6,000</p>
+              <button id="addtocart" onclick="addToCart('Samsung Wireless Earbud',6000, 'images/earbud 18.JPG')">Add to Cart</button>
+            </div>
+
+            
+            <div class="product-card">
+              <img src="images/earbud  19.JPG" alt="Product 80">
+              <h3>Wireless Stereo Earbud</h3>
+              <p class="description">Single ARipod Wireless Slide.</p>
+              <p class="price">₦9,000</p>
+              <button id="addtocart" onclick="addToCart('Wireless Stereo Earbud',9000, 'images/earbud  19.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 2.JPG" alt="Product 81">
+              <h3>Air Max Wireless Headphone</h3>
+              <p class="description">Camptible With Smartphones/Computers.</p>
+              <p class="price">₦18,000</p>
+              <button id="addtocart" onclick="addToCart('Air Max Wireless Headphone',18000, 'images/head Phone 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 3.JPG" alt="Product 82">
+              <h3>P47 Wireless Headphone </h3>
+              <p class="description">Foldable P47 Headphone White.</p>
+              <p class="price">₦7,500</p>
+              <button id="addtocart" onclick="addToCart('P47 Wireless Headphone',7500, 'images/head Phone 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 4.JPG" alt="Product 83">
+              <h3>P47 Wireless Headphone</h3>
+              <p class="description">Foldable P47 Headphone Balck.</p>
+              <p class="price">₦7,500</p>
+              <button id="addtocart" onclick="addToCart('P47 Wireless Headphone Black',7500, 'images/head Phone 4.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 5.JPG" alt="Product 84">
+              <h3>Samsung Level Headphone</h3>
+              <p class="description">Noise Cancellation, for All Device.</p>
+              <p class="price">₦21,000</p>
+              <button id="addtocart" onclick="addToCart('Samsung Level Headphone',21000, 'images/head Phone 5.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 6.JPG" alt="Product 85">
+              <h3>P47 Wireless Headphone</h3>
+              <p class="description">Cute Cat Glow Light Headset.</p>
+              <p class="price">₦9,500</p>
+              <button id="addtocart" onclick="addToCart('P47 Wireless Headphone',95000, 'images/head Phone 6.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 7.JPG" alt="Product 86">
+              <h3>Premium Wireless Headphone</h3>
+              <p class="description">Por Level Active Noise Cancellation.</p>
+              <p class="price">₦28,500</p>
+              <button id="addtocart" onclick="addToCart('Premium Wireless Headphone',28500, 'images/head Phone 7.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 8.JPG" alt="Product 87">
+              <h3>Marshall Major Headphone</h3>
+              <p class="description">Noise Cancellation, for All Device White.</p>
+              <p class="price">₦20,000</p>
+              <button id="addtocart" onclick="addToCart('Marshall Major Headphone',20000, 'images/head Phone 8.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 9.JPG" alt="Product 88">
+              <h3>Marshall Major Headphone</h3>
+              <p class="description">Noise Cancellation, for All Device Black.</p>
+              <p class="price">₦20,000</p>
+              <button id="addtocart" onclick="addToCart('Marshall Major Headphone',20000,'images/head Phone 9.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 10.JPG" alt="Product 89">
+              <h3>P9 Wireless Headphone</h3>
+              <p class="description">Wireless Headset Headphone.</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('P9 Wireless Headphone',10000, 'images/head Phone 10.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 11.JPG" alt="Product 90">
+              <h3>AEC Wireless Headphone</h3>
+              <p class="description">Noise Cancellation Headphone.</p>
+              <p class="price">₦16,000</p>
+              <button id="addtocart" onclick="addToCart('AEC Wireless Headphone',16000, 'images/head Phone 11.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 12.JPG" alt="Product 91">
+              <h3>B39m Wireless Headphone</h3>
+              <p class="description">Cute Cat Wireless Headphone.</p>
+              <p class="price">₦11,000</p>
+              <button id="addtocart" onclick="addToCart('B39m Wireless Headphone',11000, 'images/head Phone 12.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/head Phone 13.JPG" alt="Product 92">
+              <h3>Tedber Wireless Headphone</h3>
+              <p class="description">Por Disco RGB Bluetooth Headset.</p>
+              <p class="price">₦15,000</p>
+              <button id="addtocart" onclick="addToCart('Tedber Wireless Headphone',15000, 'images/head Phone 13.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/smart watch 1.JPG" alt="Product 93">
+              <h3>Smart Watch</h3>
+              <p class="description">Series 8 Smart Watch, Wireless Charging.</p>
+              <p class="price">₦17,000</p>
+              <button id="addtocart" onclick="addToCart('Smart Watch',17000, 'images/smart watch 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/smart watch 2.JPG" alt="Product 94">
+              <h3>Smart Watch</h3>
+              <p class="description">Bluetooth Call,Fitness Tracker,Heart Rate.</p>
+              <p class="price">₦30,000</p>
+              <button id="addtocart" onclick="addToCart('Smart Watch',30000, 'images/smart watch 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/smart watch 3.JPG" alt="Product 95">
+              <h3>IWO Smart Watch</h3>
+              <p class="description">Women Fitnes Tracker, Heart Rate Monitor.</p>
+              <p class="price">₦21,000</p>
+              <button id="addtocart" onclick="addToCart('IWO Smart Watch',21000, 'images/smart watch 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/humidifier 1 (1).JPG" alt="Product 96">
+              <h3>Colorful USB Humidifier</h3>
+              <p class="description">Mini Humidifier, Air Diffuser.</p>
+              <p class="price">₦5,000</p>
+              <button id="addtocart" onclick="addToCart('Colorful USB Humidifier',5000, 'images/humidifier 1 (1).JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/humidifier 2 (2).JPG" alt="Product 97">
+              <h3>Mythco Humidifier</h3>
+              <p class="description">Cool Mist Humidifier Dual Spray.</p>
+              <p class="price">₦11,000</p>
+              <button id="addtocart" onclick="addToCart('Mythco Humidifier',11000, 'images/humidifier 2 (2).JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/power bank B 1.JPG" alt="Product 98">
+              <h3>Baseus 15w Power Bank</h3>
+              <p class="description">20000mAh Fast Charging Power Bank.</p>
+              <p class="price">₦21,000</p>
+              <button id="addtocart" onclick="addToCart('Baseus 20000mAh Power Bank',21000, 'images/power bank B 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ring Ligth 1.JPG " alt="Product 99">
+              <h3>Phone Tripod Stand</h3>
+              <p class="description">Muiltifunctional Selfie Stick</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Phone Tripod Stand',8000, 'images/Ring Ligth 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/USB Hud 1.JPG" alt="Product 100">
+              <h3>USB HUB 3Ports</h3>
+              <p class="description">USB Adjustable Adaptor</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('',7000, 'images/USB Hud 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Phone Holder 3.JPG" alt="Product 101">
+              <h3>Phone Holder</h3>
+              <p class="description">Multifucntional Folding Rotaing Holder</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Phone Holder',7000, 'images/phone bg 1.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ring Light 2.JPG" alt="Product 102">
+              <h3>Selfie Stick</h3>
+              <p class="description">Multifucntional Slefie Stand With Light</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Selfie Stick',8000, 'images/Ring Light 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Car Phone Holder 2.JPG" alt="Product 103">
+              <h3>Car Phone Holder</h3>
+              <p class="description">Rearwiew Mirror 360</p>
+              <p class="price">₦10,000</p>
+              <button id="addtocart" onclick="addToCart('Car Phone Holder',10000, 'images/Car Phone Holder 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Phone Holer 2.JPG" alt="Product 104">
+              <h3>Easygo Phone Stand</h3>
+              <p class="description">Foldable Stand for Desk</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Easygo Phone Stand',8000, 'images/Phone Holer 2.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Ring Light 3.JPG" alt="Product 105">
+              <h3>Arhannory Tripod</h3>
+              <p class="description">Phone Stand with Clip and Microphone</p>
+              <p class="price">₦18,000</p>
+              <button id="addtocart" onclick="addToCart('Arhannory Tripod',18000, 'images/Ring Light 3.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/complete charger.JPG" alt="Product 106">
+              <h3>Oraimo Complete Charger</h3>
+              <p class="description">Fats Charger, Fast Charger Cable.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Oraimo Complete Charger',8000, 'images/complete charger.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Car Phone Holder 1.JPG" alt="Product 107">
+              <h3>Portable car Phone Holder</h3>
+              <p class="description">Universal Car Holder Stand</p>
+              <p class="price">₦7,000</p>
+              <button id="addtocart" onclick="addToCart('Portable car Phone Holder',7000, 'images/Car Phone Holder 1.JPG')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/3in1 cable white.JPG" alt="Product 108">
+              <h3>Homiley 3in1 Cable</h3>
+              <p class="description">Fast Retractable Charging Cable.</p>
+              <p class="price">₦8,000</p>
+              <button id="addtocart" onclick="addToCart('Homiley 3in1 Cable',8000, 'images/3in1 cable white.JPG')">Add to Cart</button>
+            </div>
+
+        </div>
+      </section>
+      <script src="Accessories.js">
+      
+      </script>       
+</body>
+</html>
